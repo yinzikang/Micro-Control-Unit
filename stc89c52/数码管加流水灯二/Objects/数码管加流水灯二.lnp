@@ -1,0 +1,3 @@
+".\Objects\数码管加流水灯二.obj" 
+TO ".\Objects\数码管加流水灯二" 
+PRINT(".\Listings\数码管加流水灯二.m51") RAMSIZE(256) 

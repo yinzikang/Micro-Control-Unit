@@ -1,0 +1,98 @@
+C51 COMPILER V9.59.0.0   ____                                                              04/09/2019 19:47:28 PAGE 1   
+
+
+C51 COMPILER V9.59.0.0, COMPILATION OF MODULE ____
+OBJECT MODULE PLACED IN .\Objects\舵机.obj
+COMPILER INVOKED BY: E:\software_part2\MDK\C51\BIN\C51.EXE 舵机.c OPTIMIZE(8,SPEED) BROWSE DEBUG OBJECTEXTEND PRINT(.\Li
+                    -stings\舵机.lst) OBJECT(.\Objects\舵机.obj)
+
+line level    source
+
+   1          #include<reg52.h>
+   2          #define uchar unsigned char
+   3          #define uint  unsigned char
+   4          sbit PWM = P1^0;
+   5          sbit jian = P3^0;
+   6          sbit jia = P3^1;
+   7          uint count;
+   8          uchar jd;
+   9          
+  10          void delay(uint x)
+  11          {
+  12   1              int i,j;
+  13   1              for(i = x;i > 0;i --)
+  14   1                      for(j = 114;j > 0;j --);
+  15   1      }
+  16          
+  17          void init()
+  18          {
+  19   1              TMOD = 0X01;
+  20   1              TH0 = 0xff;
+  21   1              TL0 = 0xac;
+  22   1              EA = 1;
+  23   1              ET0 = 1;
+  24   1              TR0 = 1;
+  25   1      }
+  26          
+  27          void scan()
+  28          {
+  29   1              if(!jia)
+  30   1              {
+  31   2                      delay(10);
+  32   2                      if(!jia)
+  33   2                      {
+  34   3                              jd ++;
+  35   3                              count = 0;
+  36   3                              if(jd == 26) jd = 25;
+  37   3                              //while(!jia);
+  38   3                      }
+  39   2              }
+  40   1              if(!jian)
+  41   1              {
+  42   2                      delay(10);
+  43   2                      if(!jian)
+  44   2                      {
+  45   3                              jd --;
+  46   3                              count = 0;
+  47   3                              if(jd == 5) jd = 6;
+  48   3                              //while(!jian);
+  49   3                      }
+  50   2              }
+  51   1      }
+  52          
+  53          void main()
+  54          {
+C51 COMPILER V9.59.0.0   ____                                                              04/09/2019 19:47:28 PAGE 2   
+
+  55   1              jd = 25;
+  56   1              count = 0;
+  57   1              init();
+  58   1              while(1) 
+  59   1              {
+  60   2                      scan();
+  61   2              }
+  62   1      }
+  63          
+  64          void T0_time() interrupt 1
+  65          {
+  66   1              TH0 = 0xff;
+  67   1              TL0 = 0xac;
+  68   1              if(count <= jd) PWM = 1;
+  69   1              else PWM = 0;
+  70   1              count += 1;
+  71   1              count %= 200;
+  72   1      }       
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    158    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =      2    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

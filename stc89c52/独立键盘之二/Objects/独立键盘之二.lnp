@@ -1,0 +1,3 @@
+".\Objects\独立键盘之二.obj" 
+TO ".\Objects\独立键盘之二" 
+PRINT(".\Listings\独立键盘之二.m51") RAMSIZE(256) 

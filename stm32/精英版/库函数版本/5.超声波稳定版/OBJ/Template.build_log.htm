@@ -1,0 +1,121 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.25.3.0
+Copyright (C) 2018 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: 1 2, 3, LIC=FQQEV-PFYFY-MRAXP-MQBZA-ZXPRV-DKU19
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.14.0.0
+Toolchain Path:  E:\software_part2\MDK\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.05 update 1 (build 106)
+Assembler:       Armasm.exe V5.05 update 1 (build 106)
+Linker/Locator:  ArmLink.exe V5.05 update 1 (build 106)
+Library Manager: ArmAr.exe V5.05 update 1 (build 106)
+Hex Converter:   FromElf.exe V5.05 update 1 (build 106)
+CPU DLL:         SARMCM3.DLL V5.14.0.0
+Dialog DLL:      DCM.DLL V1.13.1.0
+Target DLL:      Segger\JL2CM3.dll V2.99.13.0
+Dialog DLL:      TCM.DLL V1.14.4.0
+ 
+<h2>Project:</h2>
+F:\document\单片机程序\stm32\精英版\库函数版本\5.超声波稳定版\USER\Template.uvprojx
+Project File Date:  04/29/2019
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.05 update 1 (build 106)', folder: 'E:\software_part2\MDK\ARM\ARMCC\Bin'
+Rebuild target 'Template'
+compiling stm32f10x_it.c...
+compiling main.c...
+..\HARDWARE\HCSR04\hcsr04.h(2): warning:  #1295-D: Deprecated declaration Hcsr04Init - give arg types
+  void Hcsr04Init();
+..\HARDWARE\HCSR04\hcsr04.h(3): warning:  #1295-D: Deprecated declaration OpenTimerForHc - give arg types
+  static void OpenTimerForHc();
+..\HARDWARE\HCSR04\hcsr04.h(4): warning:  #1295-D: Deprecated declaration CloseTimerForHc - give arg types
+  static void CloseTimerForHc();
+..\HARDWARE\HCSR04\hcsr04.h(5): warning:  #1295-D: Deprecated declaration hcsr04_NVIC - give arg types
+  void hcsr04_NVIC();
+..\HARDWARE\HCSR04\hcsr04.h(10): warning:  #1-D: last line of file ends without a newline
+  void Delay_Us(uint16_t time);
+main.c(8): warning:  #223-D: function "GPIO_cfg" declared implicitly
+          GPIO_cfg();
+main.c(9): warning:  #223-D: function "NVIC_cfg" declared implicitly
+        NVIC_cfg();
+main.c(10): warning:  #223-D: function "USART_cfg" declared implicitly
+          USART_cfg();    
+main.c(11): warning:  #223-D: function "printf" declared implicitly
+          printf("串口初始化成功！\n");
+main.c(20): warning:  #1-D: last line of file ends without a newline
+  }
+main.c: 10 warnings, 0 errors
+compiling system_stm32f10x.c...
+compiling delay.c...
+compiling usart.c...
+assembling startup_stm32f10x_hd.s...
+compiling sys.c...
+compiling core_cm3.c...
+compiling misc.c...
+compiling stm32f10x_adc.c...
+compiling stm32f10x_bkp.c...
+compiling stm32f10x_can.c...
+compiling stm32f10x_cec.c...
+compiling stm32f10x_crc.c...
+compiling stm32f10x_dac.c...
+compiling stm32f10x_dbgmcu.c...
+compiling stm32f10x_dma.c...
+compiling stm32f10x_exti.c...
+compiling stm32f10x_flash.c...
+compiling stm32f10x_fsmc.c...
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_iwdg.c...
+compiling stm32f10x_i2c.c...
+compiling stm32f10x_pwr.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_rtc.c...
+compiling stm32f10x_sdio.c...
+compiling stm32f10x_spi.c...
+compiling stm32f10x_tim.c...
+compiling stm32f10x_wwdg.c...
+compiling stm32f10x_usart.c...
+compiling HCSR04.c...
+..\HARDWARE\HCSR04\hcsr04.h(2): warning:  #1295-D: Deprecated declaration Hcsr04Init - give arg types
+  void Hcsr04Init();
+..\HARDWARE\HCSR04\hcsr04.h(3): warning:  #1295-D: Deprecated declaration OpenTimerForHc - give arg types
+  static void OpenTimerForHc();
+..\HARDWARE\HCSR04\hcsr04.h(4): warning:  #1295-D: Deprecated declaration CloseTimerForHc - give arg types
+  static void CloseTimerForHc();
+..\HARDWARE\HCSR04\hcsr04.h(5): warning:  #1295-D: Deprecated declaration hcsr04_NVIC - give arg types
+  void hcsr04_NVIC();
+..\HARDWARE\HCSR04\hcsr04.h(10): warning:  #1-D: last line of file ends without a newline
+  void Delay_Us(uint16_t time);
+..\HARDWARE\HCSR04\HCSR04.c(150): warning:  #1-D: last line of file ends without a newline
+  }
+..\HARDWARE\HCSR04\HCSR04.c: 6 warnings, 0 errors
+linking...
+..\OBJ\Template.axf: Error: L6218E: Undefined symbol GPIO_cfg (referred from main.o).
+..\OBJ\Template.axf: Error: L6218E: Undefined symbol NVIC_cfg (referred from main.o).
+..\OBJ\Template.axf: Error: L6218E: Undefined symbol USART_cfg (referred from main.o).
+Not enough information to list image symbols.
+Not enough information to list load addresses in the image map.
+Finished: 2 information, 0 warning and 3 error messages.
+"..\OBJ\Template.axf" - 3 Error(s), 16 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F1xx_DFP.1.0.5.pack
+                Keil.STM32F1xx_DFP.1.0.5
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_Template
+  E:\software_part2\MDK\ARM\PACK\Keil\STM32F1xx_DFP\1.0.5\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+Target not created.
+Build Time Elapsed:  00:00:12
+</pre>
+</body>
+</html>

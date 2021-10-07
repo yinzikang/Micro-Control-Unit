@@ -1,0 +1,30 @@
+
+T2C38 000:396 SEGGER J-Link V4.96d Log File (0002ms, 0270ms total)
+T2C38 000:396 DLL Compiled: Jan 29 2015 11:45:37 (0002ms, 0270ms total)
+T2C38 000:396 Logging started @ 2019-03-08 19:35 (0002ms, 0270ms total)
+T2C38 000:398 JLINK_SetWarnOutHandler(...) (0000ms, 0270ms total)
+T2C38 000:398 JLINK_OpenEx(...)
+Firmware: J-Link ARM-OB STM32 compiled Aug 22 2012 19:52:04
+Hardware: V7.00
+S/N: 20090928
+Feature(s): RDI,FlashDL,FlashBP,JFlash,GDBFull  returns O.K. (0270ms, 0540ms total)
+T2C38 000:668 JLINK_SetErrorOutHandler(...) (0000ms, 0540ms total)
+T2C38 000:668 JLINK_ExecCommand("ProjectFile = "F:\document\单片机程序\stm32\库函数版本\2.按键输入\user\JLinkSettings.ini"", ...)  returns 0x00 (0004ms, 0544ms total)
+T2C38 000:732 JLINK_ExecCommand("Device = STM32F103ZE", ...)Device "STM32F103ZE" selected.  returns 0x00 (0060ms, 0605ms total)
+T2C38 000:793 JLINK_ExecCommand("DisableConnectionTimeout", ...)  returns 0x01 (0000ms, 0605ms total)
+T2C38 000:793 JLINK_GetHardwareVersion()  returns 0x11170 (0000ms, 0605ms total)
+T2C38 000:793 JLINK_GetDLLVersion()  returns 49604 (0000ms, 0605ms total)
+T2C38 000:793 JLINK_GetFirmwareString(...) (0001ms, 0606ms total)
+T2C38 000:825 JLINK_GetDLLVersion()  returns 49604 (0000ms, 0606ms total)
+T2C38 000:825 JLINK_GetCompileDateTime() (0000ms, 0606ms total)
+T2C38 000:839 JLINK_GetFirmwareString(...) (0000ms, 0606ms total)
+T2C38 000:843 JLINK_GetHardwareVersion()  returns 0x11170 (0000ms, 0606ms total)
+T2C38 000:859 JLINK_TIF_Select(JLINKARM_TIF_SWD)  returns 0x00 (0001ms, 0607ms total)
+T2C38 000:860 JLINK_SetSpeed(10000) (0000ms, 0607ms total)
+T2C38 000:860 JLINK_GetId() >0x108 TIF> >0x108 TIF>STM32Fxxxx: Cannot attach to CPU. Trying connect under reset. >0x108 TIF> >0x108 TIF>
+                JLINK_EMU_HasCapEx(0x0000002C)  returns 0x00 (0000ms, 0000ms total)
+                JLINK_EMU_HasCapEx(0x0000002C)  returns 0x00 (0000ms, 0000ms total)
+                returns 0x00000000 (0521ms, 1128ms total)
+T2C38 003:152 JLINK_Close() (0000ms, 1128ms total)
+T2C38 003:152  (0000ms, 1128ms total)
+T2C38 003:152 Closed (0000ms, 1128ms total)

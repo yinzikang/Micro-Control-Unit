@@ -1,0 +1,114 @@
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                    04/09/2019  11:25:14  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22.2.0, INVOKED BY:
+E:\SOFTWARE_PART2\MDK\C51\BIN\BL51.EXE .\Objects\点灯.obj TO .\Objects\点灯 PRINT (.\Listings\点灯.m51) RAMSIZE (256)
+
+
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  .\Objects\点灯.obj (____)
+  E:\SOFTWARE_PART2\MDK\C51\LIB\C51S.LIB (?C_STARTUP)
+  E:\SOFTWARE_PART2\MDK\C51\LIB\C51S.LIB (?C_INIT)
+
+
+LINK MAP OF MODULE:  .\Objects\点灯 (____)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+            DATA    0008H     0008H     UNIT         ?DT?____
+            IDATA   0010H     0001H     UNIT         ?STACK
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0003H     ABSOLUTE     
+                    0003H     07FDH                  *** GAP ***
+            CODE    0800H     008CH     UNIT         ?C_C51STARTUP
+            CODE    088CH     0043H     UNIT         ?PR?MAIN?____
+            CODE    08CFH     0020H     UNIT         ?PR?_DELAY?____
+            CODE    08EFH     000BH     UNIT         ?C_INITSEG
+
+
+
+OVERLAY MAP OF MODULE:   .\Objects\点灯 (____)
+
+
+SEGMENT
+  +--> CALLED SEGMENT
+---------------------
+?C_C51STARTUP
+  +--> ?PR?MAIN?____
+  +--> ?C_INITSEG
+
+?PR?MAIN?____
+  +--> ?PR?_DELAY?____
+
+
+
+SYMBOL TABLE OF MODULE:  .\Objects\点灯 (____)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        ____
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  D:0090H         PUBLIC        P1
+  D:00B0H         PUBLIC        P3
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  04/09/2019  11:25:14  PAGE 2
+
+
+  D:00A8H         PUBLIC        IE
+  C:08CFH         PUBLIC        _delay
+  D:00B8H         PUBLIC        IP
+  D:0008H         PUBLIC        deng
+  C:088CH         PUBLIC        main
+  D:0098H         PUBLIC        SCON
+  D:0088H         PUBLIC        TCON
+  D:00C8H         PUBLIC        T2CON
+  D:00D0H         PUBLIC        PSW
+  -------         PROC          _DELAY
+  D:0006H         SYMBOL        x
+  -------         DO            
+  D:0006H         SYMBOL        i
+  D:0004H         SYMBOL        j
+  -------         ENDDO         
+  C:08CFH         LINE#         14
+  C:08CFH         LINE#         15
+  C:08CFH         LINE#         17
+  C:08DAH         LINE#         18
+  C:08EEH         LINE#         19
+  -------         ENDPROC       _DELAY
+  -------         PROC          MAIN
+  -------         DO            
+  D:0002H         SYMBOL        x
+  D:0082H         SYMBOL        y
+  -------         ENDDO         
+  C:088CH         LINE#         20
+  C:088CH         LINE#         21
+  C:088CH         LINE#         22
+  C:0893H         LINE#         23
+  C:0893H         LINE#         24
+  C:0893H         LINE#         25
+  C:089CH         LINE#         26
+  C:08A6H         LINE#         27
+  C:08A6H         LINE#         28
+  C:08B3H         LINE#         29
+  C:08BAH         LINE#         30
+  C:08BCH         LINE#         31
+  C:08C0H         LINE#         32
+  C:08C1H         LINE#         33
+  C:08CDH         LINE#         34
+  -------         ENDPROC       MAIN
+  -------         ENDMOD        ____
+
+******************************************************************************
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 006DH BYTE ( 5%) *
+******************************************************************************
+
+Program Size: data=17.0 xdata=0 code=253
+LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

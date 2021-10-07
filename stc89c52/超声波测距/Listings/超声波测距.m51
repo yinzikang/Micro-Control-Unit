@@ -1,0 +1,269 @@
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                    04/30/2019  09:26:28  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22.2.0, INVOKED BY:
+E:\SOFTWARE_PART2\MDK\C51\BIN\BL51.EXE .\Objects\51.obj TO .\Objects\³¬Éù²¨²â¾à PRINT (.\Listings\³¬Éù²¨²â¾à.m51) RAMSIZ
+>> E (256)
+
+
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  .\Objects\51.obj (51)
+  E:\SOFTWARE_PART2\MDK\C51\LIB\C51S.LIB (?C_STARTUP)
+  E:\SOFTWARE_PART2\MDK\C51\LIB\C51S.LIB (?C?IMUL)
+  E:\SOFTWARE_PART2\MDK\C51\LIB\C51S.LIB (?C?UIDIV)
+
+
+LINK MAP OF MODULE:  .\Objects\³¬Éù²¨²â¾à (51)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+            DATA    0008H     0010H     UNIT         ?DT?51
+                    0018H     0008H                  *** GAP ***
+            BIT     0020H.0   0000H.1   UNIT         ?BI?51
+                    0020H.1   0000H.7                *** GAP ***
+            DATA    0021H     0009H     UNIT         _DATA_GROUP_
+            IDATA   002AH     0001H     UNIT         ?STACK
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0003H     ABSOLUTE     
+            CODE    0003H     0003H     ABSOLUTE     
+                    0006H     0005H                  *** GAP ***
+            CODE    000BH     0003H     ABSOLUTE     
+                    000EH     07F2H                  *** GAP ***
+            CODE    0800H     00CBH     UNIT         ?PR?MAIN?51
+            CODE    08CBH     0067H     UNIT         ?C?LIB_CODE
+            CODE    0932H     0052H     UNIT         ?PR?_CONVERSION?51
+            CODE    0984H     0038H     UNIT         ?PR?TIMER0?51
+            CODE    09BCH     0010H     UNIT         ?PR?DELAY_20US?51
+            CODE    09CCH     000CH     UNIT         ?C_C51STARTUP
+            CODE    09D8H     000BH     UNIT         ?PR?INTO_?51
+            CODE    09E3H     000AH     UNIT         ?CO?51
+
+
+
+OVERLAY MAP OF MODULE:   .\Objects\³¬Éù²¨²â¾à (51)
+
+
+SEGMENT                          DATA_GROUP 
+  +--> CALLED SEGMENT          START    LENGTH
+----------------------------------------------
+?C_C51STARTUP                  -----    -----
+  +--> ?PR?MAIN?51
+
+?PR?MAIN?51                    0021H    0007H
+  +--> ?PR?DELAY_20US?51
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  04/30/2019  09:26:28  PAGE 2
+
+
+  +--> ?PR?_CONVERSION?51
+
+?PR?_CONVERSION?51             0028H    0002H
+  +--> ?CO?51
+
+
+
+SYMBOL TABLE OF MODULE:  .\Objects\³¬Éù²¨²â¾à (51)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        51
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  D:0092H         PUBLIC        P1M0
+  D:0093H         PUBLIC        P0M1
+  D:0096H         PUBLIC        P2M0
+  D:0091H         PUBLIC        P1M1
+  D:0080H         PUBLIC        P0
+  B:00B0H.2       PUBLIC        Echo
+  D:0095H         PUBLIC        P2M1
+  D:0090H         PUBLIC        P1
+  D:00A0H         PUBLIC        P2
+  D:00B0H         PUBLIC        P3
+  B:00A8H.7       PUBLIC        EA
+  D:00A8H         PUBLIC        IE
+  C:09E3H         PUBLIC        SEG7
+  B:0090H.0       PUBLIC        Trig
+  D:00B8H         PUBLIC        IP
+  C:09D8H         PUBLIC        INTO_
+  D:0008H         PUBLIC        flag
+  D:0097H         PUBLIC        CLK_DIV
+  C:0800H         PUBLIC        main
+  D:0009H         PUBLIC        bai
+  D:0098H         PUBLIC        SCON
+  D:0089H         PUBLIC        TMOD
+  D:0088H         PUBLIC        TCON
+  D:000AH         PUBLIC        temp
+  C:09BCH         PUBLIC        delay_20us
+  B:0090H.1       PUBLIC        test
+  D:000BH         PUBLIC        shi
+  D:000CH         PUBLIC        outcomeH
+  B:00A8H.1       PUBLIC        ET0
+  B:0088H.7       PUBLIC        TF1
+  D:000DH         PUBLIC        ge
+  D:008CH         PUBLIC        TH0
+  C:0932H         PUBLIC        _conversion
+  D:000EH         PUBLIC        outcomeL
+  B:00A8H.0       PUBLIC        EX0
+  B:0088H.0       PUBLIC        IT0
+  D:008DH         PUBLIC        TH1
+  D:000FH         PUBLIC        distance
+  D:008AH         PUBLIC        TL0
+  D:008BH         PUBLIC        TL1
+  C:0984H         PUBLIC        timer0
+  B:0088H.4       PUBLIC        TR0
+  B:0088H.6       PUBLIC        TR1
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  04/30/2019  09:26:28  PAGE 3
+
+
+  B:0020H.0       PUBLIC        succeed_flag
+  D:00C8H         PUBLIC        T2CON
+  D:0017H         PUBLIC        i
+  D:00D0H         PUBLIC        PSW
+  D:0094H         PUBLIC        P0M0
+  -------         PROC          MAIN
+  -------         DO            
+  D:0021H         SYMBOL        distance_data
+  D:0023H         SYMBOL        a
+  D:0025H         SYMBOL        b
+  D:0027H         SYMBOL        CONT_1
+  -------         ENDDO         
+  C:0800H         LINE#         34
+  C:0800H         LINE#         35
+  C:0800H         LINE#         37
+  C:0803H         LINE#         38
+  C:0806H         LINE#         39
+  C:0808H         LINE#         40
+  C:080AH         LINE#         41
+  C:080DH         LINE#         42
+  C:0810H         LINE#         43
+  C:0813H         LINE#         44
+  C:0815H         LINE#         45
+  C:0817H         LINE#         46
+  C:0819H         LINE#         47
+  C:081BH         LINE#         48
+  C:081EH         LINE#         49
+  C:0820H         LINE#         50
+  C:0822H         LINE#         51
+  C:0824H         LINE#         53
+  C:0826H         LINE#         54
+  C:0828H         LINE#         57
+  C:0828H         LINE#         58
+  C:0828H         LINE#         59
+  C:082AH         LINE#         60
+  C:082CH         LINE#         61
+  C:082FH         LINE#         62
+  C:0831H         LINE#         63
+  C:0834H         LINE#         64
+  C:0836H         LINE#         65
+  C:0838H         LINE#         66
+  C:083BH         LINE#         67
+  C:083DH         LINE#         68
+  C:083FH         LINE#         69
+  C:0841H         LINE#         70
+  C:0843H         LINE#         72
+  C:084FH         LINE#         73
+  C:0851H         LINE#         74
+  C:0853H         LINE#         76
+  C:0856H         LINE#         77
+  C:0856H         LINE#         78
+  C:085CH         LINE#         79
+  C:0863H         LINE#         80
+  C:0868H         LINE#         81
+  C:0876H         LINE#         82
+  C:087FH         LINE#         83
+  C:087FH         LINE#         85
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  04/30/2019  09:26:28  PAGE 4
+
+
+  C:0882H         LINE#         86
+  C:0882H         LINE#         87
+  C:0887H         LINE#         88
+  C:0889H         LINE#         89
+  C:0889H         LINE#         100
+  C:088FH         LINE#         101
+  C:089CH         LINE#         102
+  C:08AAH         LINE#         103
+  C:08B8H         LINE#         104
+  C:08BBH         LINE#         105
+  C:08C1H         LINE#         106
+  C:08C8H         LINE#         107
+  C:08C8H         LINE#         110
+  -------         ENDPROC       MAIN
+  -------         PROC          INTO_
+  C:09D8H         LINE#         114
+  C:09D8H         LINE#         116
+  C:09DBH         LINE#         117
+  C:09DEH         LINE#         118
+  C:09E0H         LINE#         119
+  C:09E2H         LINE#         120
+  -------         ENDPROC       INTO_
+  -------         PROC          TIMER0
+  C:0984H         LINE#         123
+  C:0988H         LINE#         125
+  C:098BH         LINE#         126
+  C:098EH         LINE#         127
+  C:099AH         LINE#         128
+  C:09A4H         LINE#         129
+  C:09AEH         LINE#         130
+  C:09B7H         LINE#         131
+  C:09B7H         LINE#         132
+  -------         ENDPROC       TIMER0
+  -------         PROC          _CONVERSION
+  D:0002H         SYMBOL        temp_data
+  -------         DO            
+  D:0007H         SYMBOL        ge_data
+  D:0028H         SYMBOL        shi_data
+  D:0029H         SYMBOL        bai_data
+  -------         ENDDO         
+  C:0932H         LINE#         144
+  C:0936H         LINE#         145
+  C:0936H         LINE#         147
+  C:093FH         LINE#         148
+  C:094EH         LINE#         149
+  C:095BH         LINE#         150
+  C:0966H         LINE#         151
+  C:0968H         LINE#         153
+  C:0970H         LINE#         154
+  C:0975H         LINE#         155
+  C:0977H         LINE#         157
+  C:0979H         LINE#         158
+  C:097CH         LINE#         159
+  C:097FH         LINE#         160
+  C:0981H         LINE#         161
+  C:0983H         LINE#         162
+  -------         ENDPROC       _CONVERSION
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  04/30/2019  09:26:28  PAGE 5
+
+
+  -------         PROC          DELAY_20US
+  -------         DO            
+  D:0007H         SYMBOL        bt
+  -------         ENDDO         
+  C:09BCH         LINE#         164
+  C:09BCH         LINE#         165
+  C:09BCH         LINE#         166
+  C:09CBH         LINE#         167
+  -------         ENDPROC       DELAY_20US
+  -------         ENDMOD        51
+
+  -------         MODULE        ?C?IMUL
+  C:08CBH         PUBLIC        ?C?IMUL
+  -------         ENDMOD        ?C?IMUL
+
+  -------         MODULE        ?C?UIDIV
+  C:08DDH         PUBLIC        ?C?UIDIV
+  -------         ENDMOD        ?C?UIDIV
+
+******************************************************************************
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 0180H BYTE (18%) *
+******************************************************************************
+
+Program Size: data=34.1 xdata=0 code=502
+LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

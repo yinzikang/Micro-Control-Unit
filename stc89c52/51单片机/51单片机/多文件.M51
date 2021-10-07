@@ -1,0 +1,211 @@
+BL51 BANKED LINKER/LOCATER V6.22                                                        03/23/2018  18:00:40  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22, INVOKED BY:
+D:\RUANJIZN\KELI\C51\BIN\BL51.EXE juzhen1.obj, main.obj, display.obj, delay.obj TO 多文件
+
+
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  juzhen1.obj (JUZHEN1)
+  main.obj (MAIN)
+  display.obj (DISPLAY)
+  delay.obj (DELAY)
+  D:\RUANJIZN\KELI\C51\LIB\C51S.LIB (?C_STARTUP)
+  D:\RUANJIZN\KELI\C51\LIB\C51S.LIB (?C_INIT)
+
+
+LINK MAP OF MODULE:  多文件 (JUZHEN1)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+            DATA    0008H     001AH     UNIT         ?DT?JUZHEN1
+            DATA    0022H     0019H     UNIT         ?DT?MAIN
+            DATA    003BH     0019H     UNIT         ?DT?DISPLAY
+            DATA    0054H     0019H     UNIT         ?DT?DELAY
+            DATA    006DH     0001H     UNIT         ?DT?KEY_CHECK?JUZHEN1
+            IDATA   006EH     0001H     UNIT         ?STACK
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0003H     ABSOLUTE     
+            CODE    0003H     008CH     UNIT         ?C_C51STARTUP
+            CODE    008FH     006DH     UNIT         ?C_INITSEG
+            CODE    00FCH     0032H     UNIT         ?PR?KEY_CHECK?JUZHEN1
+            CODE    012EH     001EH     UNIT         ?PR?_DELAY?DELAY
+            CODE    014CH     0014H     UNIT         ?PR?SHOW?DISPLAY
+            CODE    0160H     0005H     UNIT         ?PR?MAIN?MAIN
+
+
+
+OVERLAY MAP OF MODULE:   多文件 (JUZHEN1)
+
+
+SEGMENT
+  +--> CALLED SEGMENT
+---------------------
+?C_C51STARTUP
+  +--> ?PR?MAIN?MAIN
+  +--> ?C_INITSEG
+
+?PR?MAIN?MAIN
+  +--> ?PR?SHOW?DISPLAY
+
+
+
+IGNORED SYMBOLS:
+BL51 BANKED LINKER/LOCATER V6.22                                                      03/23/2018  18:00:40  PAGE 2
+
+
+   LEDDATA
+
+
+
+SYMBOL TABLE OF MODULE:  多文件 (JUZHEN1)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        JUZHEN1
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  D:0090H         PUBLIC        P1
+  D:00A0H         PUBLIC        P2
+  D:00B0H         PUBLIC        P3
+  D:00A8H         PUBLIC        IE
+  D:00B8H         PUBLIC        IP
+  C:00FCH         PUBLIC        key_check
+  D:0098H         PUBLIC        SCON
+  D:0088H         PUBLIC        TCON
+  D:0008H         PUBLIC        leddata
+  D:00C8H         PUBLIC        T2CON
+  D:0021H         PUBLIC        x
+  D:00D0H         PUBLIC        PSW
+  -------         PROC          KEY_CHECK
+  -------         DO            
+  D:0007H         SYMBOL        key_l
+  D:006DH         SYMBOL        key_h
+  -------         ENDDO         
+  C:00FCH         LINE#         5
+  C:00FCH         LINE#         6
+  C:00FCH         LINE#         8
+  C:00FCH         LINE#         9
+  C:00FCH         LINE#         10
+  C:00FFH         LINE#         11
+  C:0107H         LINE#         12
+  C:0107H         LINE#         13
+  C:010EH         LINE#         14
+  C:0116H         LINE#         15
+  C:0116H         LINE#         16
+  C:011AH         LINE#         17
+  C:011EH         LINE#         18
+  C:0124H         LINE#         19
+  -------         ENDPROC       KEY_CHECK
+  -------         ENDMOD        JUZHEN1
+
+  -------         MODULE        MAIN
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  D:0090H         PUBLIC        P1
+  D:00A0H         PUBLIC        P2
+  D:00B0H         PUBLIC        P3
+  D:00A8H         PUBLIC        IE
+  D:00B8H         PUBLIC        IP
+  C:0160H         PUBLIC        main
+  D:0098H         PUBLIC        SCON
+  D:0088H         PUBLIC        TCON
+  D:0022H         PUBLIC        leddata
+  D:00C8H         PUBLIC        T2CON
+BL51 BANKED LINKER/LOCATER V6.22                                                      03/23/2018  18:00:40  PAGE 3
+
+
+  D:00D0H         PUBLIC        PSW
+  -------         PROC          MAIN
+  C:0160H         LINE#         5
+  C:0160H         LINE#         6
+  C:0160H         LINE#         8
+  C:0160H         LINE#         9
+  C:0160H         LINE#         10
+  C:0163H         LINE#         12
+  -------         ENDPROC       MAIN
+  -------         ENDMOD        MAIN
+
+  -------         MODULE        DISPLAY
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  D:0080H         PUBLIC        P0
+  D:0090H         PUBLIC        P1
+  D:00A0H         PUBLIC        P2
+  D:00B0H         PUBLIC        P3
+  D:00A8H         PUBLIC        IE
+  D:00B8H         PUBLIC        IP
+  D:0098H         PUBLIC        SCON
+  D:0088H         PUBLIC        TCON
+  C:014CH         PUBLIC        show
+  B:00A0H.7       PUBLIC        wei
+  B:00A0H.6       PUBLIC        dun
+  D:003BH         PUBLIC        leddata
+  D:00C8H         PUBLIC        T2CON
+  D:00D0H         PUBLIC        PSW
+  -------         PROC          SHOW
+  C:014CH         LINE#         5
+  C:014CH         LINE#         6
+  C:014CH         LINE#         7
+  C:014EH         LINE#         8
+  C:0151H         LINE#         9
+  C:0153H         LINE#         11
+  C:0155H         LINE#         12
+  C:015DH         LINE#         13
+  C:015FH         LINE#         14
+  -------         ENDPROC       SHOW
+  -------         ENDMOD        DISPLAY
+
+  -------         MODULE        DELAY
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  D:0090H         PUBLIC        P1
+  D:00A0H         PUBLIC        P2
+  D:00B0H         PUBLIC        P3
+  D:00A8H         PUBLIC        IE
+  C:012EH         PUBLIC        _delay
+  D:00B8H         PUBLIC        IP
+  D:0098H         PUBLIC        SCON
+  D:0088H         PUBLIC        TCON
+  D:0054H         PUBLIC        leddata
+  D:00C8H         PUBLIC        T2CON
+  D:00D0H         PUBLIC        PSW
+  -------         PROC          _DELAY
+  D:0006H         SYMBOL        z
+  -------         DO            
+  D:0006H         SYMBOL        i
+BL51 BANKED LINKER/LOCATER V6.22                                                      03/23/2018  18:00:40  PAGE 4
+
+
+  D:0004H         SYMBOL        j
+  -------         ENDDO         
+  C:012EH         LINE#         4
+  C:012EH         LINE#         5
+  C:012EH         LINE#         7
+  C:0137H         LINE#         8
+  C:014BH         LINE#         9
+  -------         ENDPROC       _DELAY
+  -------         ENDMOD        DELAY
+
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  LEDDATA
+    MODULE:  main.obj (MAIN)
+
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  LEDDATA
+    MODULE:  display.obj (DISPLAY)
+
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  LEDDATA
+    MODULE:  delay.obj (DELAY)
+
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?KEY_CHECK?JUZHEN1
+
+Program Size: data=111.0 xdata=0 code=357
+LINK/LOCATE RUN COMPLETE.  1 WARNING(S),  3 ERROR(S)

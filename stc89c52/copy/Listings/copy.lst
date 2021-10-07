@@ -1,0 +1,229 @@
+C51 COMPILER V9.54   COPY                                                                  03/20/2018 20:30:55 PAGE 1   
+
+
+C51 COMPILER V9.54, COMPILATION OF MODULE COPY
+OBJECT MODULE PLACED IN .\Objects\copy.obj
+COMPILER INVOKED BY: D:\ruanjizn\keli\C51\BIN\C51.EXE copy.c OPTIMIZE(8,SPEED) BROWSE DEBUG OBJECTEXTEND PRINT(.\Listing
+                    -s\copy.lst) TABS(2) OBJECT(.\Objects\copy.obj)
+
+line level    source
+
+   1          #include<reg52.h>
+   2          #include<intrins.h>
+   3          #define uchar unsigned char
+   4          #define uint  unsigned int
+   5          sbit du = P2^6;
+   6          sbit we = P2^7;
+   7          uchar num1;
+   8          uchar num2;
+   9          unsigned char leddata[]=
+  10          {  
+  11                          0x3F,  //"0"
+  12                          0x06,  //"1"
+  13                          0x5B,  //"2"
+  14                          0x4F,  //"3"
+  15                          0x66,  //"4"
+  16                          0x6D,  //"5"
+  17                          0x7D,  //"6"
+  18                          0x07,  //"7"
+  19                          0x7F,  //"8"
+  20                          0x6F,  //"9"
+  21                          0x77,  //"A"
+  22                          0x7C,  //"B"
+  23                          0x39,  //"C"
+  24                          0x5E,  //"D"
+  25                          0x79,  //"E"
+  26                          0x71,  //"F"
+  27                          0x76,  //"H"
+  28                          0x38,  //"L"
+  29                          0x37,  //"n"
+  30                          0x3E,  //"u"
+  31                          0x73,  //"P"
+  32                          0x5C,  //"o"
+  33                          0x40,  //"-"
+  34                          0x00,  //??
+  35                          0x00  //???
+  36           };
+  37          unsigned char  wei[]=
+  38          {  
+  39                          0xfe,//??
+  40                          0xfd,//??
+  41                          0xfb,//??
+  42                          0xf7,//??
+  43                          0xef,//??
+  44                          0xdf,//??
+  45                          0xbf,//??
+  46                          0x7f //??                
+  47          };
+  48          
+  49          unsigned char a[8] = 
+  50          {
+  51                          0x06,  //"1"
+  52                          0x00,  //???
+  53                          0x38,  //"L"
+  54                          0x3F,  //"0"
+C51 COMPILER V9.54   COPY                                                                  03/20/2018 20:30:55 PAGE 2   
+
+  55                          0x3E,  //"u"
+  56                          0x79,  //"E"
+  57                          0x00,  //???
+  58                          0x3E,  //"u"
+  59          };
+  60          void init_start()
+  61          {
+  62   1        TMOD = 0x01;
+  63   1        TH0 = (65535 - 45872) / 256;
+  64   1        TL0 = (65535 - 45876) % 256;
+  65   1        EA = 1;
+  66   1        ET0 = 1;
+  67   1        TR0 = 1;
+  68   1      }
+  69          
+  70          void delay(int x)
+  71          {
+  72   1        int i,j;
+  73   1        for(i = x;i > 0;i --)
+  74   1          for(j = 114;j > 0;j --);
+  75   1      }
+  76          
+  77          void play()
+  78          {
+  79   1        if(num2 < 8)
+  80   1        {
+  81   2          we = 1;
+  82   2          P0 = wei[0];
+  83   2          we = 0;
+  84   2          P0 = 0xff;
+  85   2            
+  86   2          du = 1;
+  87   2          P0 = a[num2 % 8];
+  88   2          du = 0;
+  89   2          P0 = 0xff;
+  90   2          
+  91   2          delay(2);
+  92   2          
+  93   2          we = 1;
+  94   2          P0 = wei[1];
+  95   2          we = 0;
+  96   2          P0 = 0xff;
+  97   2            
+  98   2          du = 1;
+  99   2          P0 = a[(num2 + 1)% 8];
+ 100   2          du = 0;
+ 101   2          P0 = 0xff;
+ 102   2          
+ 103   2          delay(2);
+ 104   2          
+ 105   2          we = 1;
+ 106   2          P0 = wei[2];
+ 107   2          we = 0;
+ 108   2          P0 = 0xff;
+ 109   2            
+ 110   2          du = 1;
+ 111   2          P0 = a[(num2 + 2)% 8];
+ 112   2          du = 0;
+ 113   2          P0 = 0xff;
+ 114   2          
+ 115   2          delay(2);
+ 116   2          
+C51 COMPILER V9.54   COPY                                                                  03/20/2018 20:30:55 PAGE 3   
+
+ 117   2          we = 1;
+ 118   2          P0 = wei[3];
+ 119   2          we = 0;
+ 120   2          P0 = 0xff;
+ 121   2            
+ 122   2          du = 1;
+ 123   2          P0 = a[(num2 + 3)% 8];
+ 124   2          du = 0;
+ 125   2          P0 = 0xff;
+ 126   2          
+ 127   2          delay(2);
+ 128   2          
+ 129   2          we = 1;
+ 130   2          P0 = wei[4];
+ 131   2          we = 0;
+ 132   2          P0 = 0xff;
+ 133   2            
+ 134   2          du = 1;
+ 135   2          P0 = a[(num2 + 4)% 8];
+ 136   2          du = 0;
+ 137   2          P0 = 0xff;
+ 138   2          
+ 139   2          delay(2);
+ 140   2          
+ 141   2          we = 1;
+ 142   2          P0 = wei[5];
+ 143   2          we = 0;
+ 144   2          P0 = 0xff;
+ 145   2            
+ 146   2          du = 1;
+ 147   2          P0 = a[(num2 + 5)% 8];
+ 148   2          du = 0;
+ 149   2          P0 = 0xff;
+ 150   2          
+ 151   2          delay(2);
+ 152   2          
+ 153   2          we = 1;
+ 154   2          P0 = wei[6];
+ 155   2          we = 0;
+ 156   2          P0 = 0xff;
+ 157   2            
+ 158   2          du = 1;
+ 159   2          P0 = a[(num2 + 6)% 8];
+ 160   2          du = 0;
+ 161   2          P0 = 0xff;
+ 162   2          
+ 163   2          delay(2);
+ 164   2          
+ 165   2          we = 1;
+ 166   2          P0 = wei[7];
+ 167   2          we = 0;
+ 168   2          P0 = 0xff;
+ 169   2            
+ 170   2          du = 1;
+ 171   2          P0 = a[(num2 + 7)% 8];
+ 172   2          du = 0;
+ 173   2          P0 = 0xff;
+ 174   2          
+ 175   2          delay(2);
+ 176   2        }
+ 177   1        else num2 = 0;
+ 178   1      }
+C51 COMPILER V9.54   COPY                                                                  03/20/2018 20:30:55 PAGE 4   
+
+ 179          
+ 180          void main()
+ 181          {
+ 182   1        init_start();
+ 183   1        while(1)
+ 184   1        {
+ 185   2          play();
+ 186   2        }
+ 187   1      }
+ 188          
+ 189          void T0_time() interrupt 1
+ 190          {
+ 191   1        TH0 = (65535 - 45872) / 256;
+ 192   1        TL0 = (65535 - 45876) % 256;
+ 193   1        num1 ++;
+ 194   1        if(num1 == 20)
+ 195   1        {
+ 196   2          num1 = 0;
+ 197   2          num2 ++;
+ 198   2        }
+ 199   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    280    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =     43    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

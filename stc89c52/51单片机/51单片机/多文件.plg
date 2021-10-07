@@ -1,0 +1,1333 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Project:</h2>
+G:\单片机\51单片机\多文件.uvproj
+Project File Date:  03/23/2018
+
+<h2>Output:</h2>
+Build target 'Target 1'
+compiling shuam.c...
+shuam.c(1): error C318: can't open file 'shuam.c'
+compiling juzhen1.c...
+JUZHEN1.C(4): error C129: missing ';' before 'key_check'
+compiling main.c...
+compiling display.c...
+compiling delay.c...
+Target not created
+Build target 'Target 1'
+compiling shuam.c...
+INIT.H(9): error C127: 'key_change': invalid storage class
+INIT.H(10): error C141: syntax error near 'sbit'
+SHUAM.C(6): error C231: 'wei': redefinition
+SHUAM.C(7): error C231: 'dun': redefinition
+SHUAM.C(40): error C141: syntax error near ''
+compiling juzhen1.c...
+INIT.H(9): error C127: 'key_change': invalid storage class
+INIT.H(10): error C141: syntax error near 'sbit'
+compiling main.c...
+INIT.H(9): error C127: 'key_change': invalid storage class
+INIT.H(10): error C141: syntax error near 'sbit'
+compiling display.c...
+INIT.H(9): error C127: 'key_change': invalid storage class
+INIT.H(10): error C141: syntax error near 'sbit'
+compiling delay.c...
+INIT.H(9): error C127: 'key_change': invalid storage class
+INIT.H(10): error C141: syntax error near 'sbit'
+Target not created
+Build target 'Target 1'
+compiling shuam.c...
+SHUAM.C(6): error C231: 'wei': redefinition
+SHUAM.C(7): error C231: 'dun': redefinition
+SHUAM.C(40): error C141: syntax error near ''
+compiling juzhen1.c...
+JUZHEN1.C(12): error C267: 'delay': requires ANSI-style prototype
+compiling main.c...
+compiling display.c...
+DISPLAY.C(11): error C141: syntax error near 'dun'
+compiling delay.c...
+Target not created
+Build target 'Target 1'
+compiling shuam.c...
+SHUAM.C(38): error C141: syntax error near ''
+compiling juzhen1.c...
+JUZHEN1.C(12): error C267: 'delay': requires ANSI-style prototype
+compiling display.c...
+DISPLAY.C(11): error C141: syntax error near 'dun'
+Target not created
+Build target 'Target 1'
+compiling shuam.c...
+SHUAM.C(38): error C141: syntax error near ''
+compiling juzhen1.c...
+JUZHEN1.C(12): error C267: 'delay': requires ANSI-style prototype
+compiling display.c...
+Target not created
+Build target 'Target 1'
+compiling shuam.c...
+SHUAM.C(38): error C141: syntax error near 'void'
+SHUAM.C(39): error C231: 'show': redefinition
+SHUAM.C(39): error C141: syntax error near '{'
+SHUAM.C(40): error C231: 'wei': redefinition
+SHUAM.C(40): error C231: 'wei': redefinition
+SHUAM.C(41): error C231: 'P0': redefinition
+SHUAM.C(41): error C231: 'P0': redefinition
+SHUAM.C(42): error C279: 'wei': multiple initialization
+SHUAM.C(42): error C231: 'wei': redefinition
+SHUAM.C(42): error C231: 'wei': redefinition
+SHUAM.C(43): error C231: 'dun': redefinition
+SHUAM.C(43): error C231: 'dun': redefinition
+SHUAM.C(44): error C279: 'P0': multiple initialization
+SHUAM.C(44): error C231: 'P0': redefinition
+SHUAM.C(44): error C231: 'P0': redefinition
+SHUAM.C(45): error C279: 'dun': multiple initialization
+SHUAM.C(45): error C231: 'dun': redefinition
+SHUAM.C(45): error C231: 'dun': redefinition
+SHUAM.C(46): error C141: syntax error near '}'
+compiling juzhen1.c...
+JUZHEN1.C(12): error C267: 'delay': requires ANSI-style prototype
+Target not created
+Build target 'Target 1'
+compiling juzhen1.c...
+JUZHEN1.C(4): error C141: syntax error near 'unsigned'
+JUZHEN1.C(5): error C141: syntax error near '{'
+JUZHEN1.C(7): error C141: syntax error near 'while'
+JUZHEN1.C(7): error C141: syntax error near '1'
+JUZHEN1.C(9): error C231: 'P3': redefinition
+JUZHEN1.C(9): error C231: 'P3': redefinition
+JUZHEN1.C(10): error C141: syntax error near 'if'
+JUZHEN1.C(10): error C141: syntax error near '&', expected ')'
+JUZHEN1.C(12): error C141: syntax error near '5'
+JUZHEN1.C(12): error C231: 'delay': redefinition
+JUZHEN1.C(13): error C231: 'key_l': redefinition
+JUZHEN1.C(13): error C247: non-address/-constant initializer
+JUZHEN1.C(14): error C279: 'P3': multiple initialization
+JUZHEN1.C(14): error C231: 'P3': redefinition
+JUZHEN1.C(14): error C247: non-address/-constant initializer
+JUZHEN1.C(14): error C231: 'P3': redefinition
+JUZHEN1.C(15): error C231: 'key_h': redefinition
+JUZHEN1.C(15): error C247: non-address/-constant initializer
+JUZHEN1.C(16): error C141: syntax error near 'while'
+JUZHEN1.C(16): error C141: syntax error near '&', expected ')'
+JUZHEN1.C(19): error C141: syntax error near '+', expected ')'
+JUZHEN1.C(19): error C129: missing ';' before ')'
+compiling main.c...
+MAIN.C(4): error C141: syntax error near 'void'
+MAIN.C(5): error C141: syntax error near '{'
+MAIN.C(8): error C231: 'show': redefinition
+MAIN.C(10): error C141: syntax error near '}'
+compiling display.c...
+DISPLAY.C(4): error C141: syntax error near 'void'
+DISPLAY.C(5): error C231: 'show': redefinition
+DISPLAY.C(5): error C141: syntax error near '{'
+DISPLAY.C(6): error C231: 'wei': redefinition
+DISPLAY.C(6): error C231: 'wei': redefinition
+DISPLAY.C(7): error C231: 'P0': redefinition
+DISPLAY.C(7): error C231: 'P0': redefinition
+DISPLAY.C(8): error C279: 'wei': multiple initialization
+DISPLAY.C(8): error C231: 'wei': redefinition
+DISPLAY.C(8): error C231: 'wei': redefinition
+DISPLAY.C(9): error C231: 'dun': redefinition
+DISPLAY.C(9): error C231: 'dun': redefinition
+DISPLAY.C(10): error C279: 'P0': multiple initialization
+DISPLAY.C(10): error C231: 'P0': redefinition
+DISPLAY.C(10): error C231: 'P0': redefinition
+DISPLAY.C(11): error C279: 'dun': multiple initialization
+DISPLAY.C(11): error C231: 'dun': redefinition
+DISPLAY.C(11): error C231: 'dun': redefinition
+DISPLAY.C(12): error C141: syntax error near '}'
+compiling delay.c...
+DELAY.C(4): error C141: syntax error near 'void'
+DELAY.C(5): error C231: 'delay': redefinition
+DELAY.C(5): error C141: syntax error near '{'
+DELAY.C(7): error C141: syntax error near 'for'
+DELAY.C(7): error C141: syntax error near '=', expected ')'
+DELAY.C(7): error C129: missing ';' before '>'
+Target not created
+Build target 'Target 1'
+compiling juzhen1.c...
+JUZHEN1.C(4): error C141: syntax error near 'unsigned'
+JUZHEN1.C(5): error C141: syntax error near '{'
+JUZHEN1.C(7): error C141: syntax error near 'while'
+JUZHEN1.C(7): error C141: syntax error near '1'
+JUZHEN1.C(9): error C231: 'P3': redefinition
+JUZHEN1.C(9): error C231: 'P3': redefinition
+JUZHEN1.C(10): error C141: syntax error near 'if'
+JUZHEN1.C(10): error C141: syntax error near '&', expected ')'
+JUZHEN1.C(12): error C141: syntax error near '5'
+JUZHEN1.C(12): error C231: 'delay': redefinition
+JUZHEN1.C(13): error C231: 'key_l': redefinition
+JUZHEN1.C(13): error C247: non-address/-constant initializer
+JUZHEN1.C(14): error C279: 'P3': multiple initialization
+JUZHEN1.C(14): error C231: 'P3': redefinition
+JUZHEN1.C(14): error C247: non-address/-constant initializer
+JUZHEN1.C(14): error C231: 'P3': redefinition
+JUZHEN1.C(15): error C231: 'key_h': redefinition
+JUZHEN1.C(15): error C247: non-address/-constant initializer
+JUZHEN1.C(16): error C141: syntax error near 'while'
+JUZHEN1.C(16): error C141: syntax error near '&', expected ')'
+JUZHEN1.C(19): error C141: syntax error near '+', expected ')'
+JUZHEN1.C(19): error C129: missing ';' before ')'
+compiling main.c...
+MAIN.C(4): error C141: syntax error near 'void'
+MAIN.C(5): error C141: syntax error near '{'
+MAIN.C(8): error C231: 'show': redefinition
+MAIN.C(10): error C141: syntax error near '}'
+compiling display.c...
+DISPLAY.C(4): error C141: syntax error near 'void'
+DISPLAY.C(5): error C231: 'show': redefinition
+DISPLAY.C(5): error C141: syntax error near '{'
+DISPLAY.C(6): error C231: 'wei': redefinition
+DISPLAY.C(6): error C231: 'wei': redefinition
+DISPLAY.C(7): error C231: 'P0': redefinition
+DISPLAY.C(7): error C231: 'P0': redefinition
+DISPLAY.C(8): error C279: 'wei': multiple initialization
+DISPLAY.C(8): error C231: 'wei': redefinition
+DISPLAY.C(8): error C231: 'wei': redefinition
+DISPLAY.C(9): error C231: 'dun': redefinition
+DISPLAY.C(9): error C231: 'dun': redefinition
+DISPLAY.C(10): error C279: 'P0': multiple initialization
+DISPLAY.C(10): error C231: 'P0': redefinition
+DISPLAY.C(10): error C231: 'P0': redefinition
+DISPLAY.C(11): error C279: 'dun': multiple initialization
+DISPLAY.C(11): error C231: 'dun': redefinition
+DISPLAY.C(11): error C231: 'dun': redefinition
+DISPLAY.C(12): error C141: syntax error near '}'
+compiling delay.c...
+DELAY.C(4): error C141: syntax error near 'void'
+DELAY.C(5): error C231: 'delay': redefinition
+DELAY.C(5): error C141: syntax error near '{'
+DELAY.C(7): error C141: syntax error near 'for'
+DELAY.C(7): error C141: syntax error near '=', expected ')'
+DELAY.C(7): error C129: missing ';' before '>'
+Target not created
+Build target 'Target 1'
+compiling juzhen1.c...
+JUZHEN1.C(5): error C141: syntax error near 'unsigned'
+JUZHEN1.C(6): error C141: syntax error near '{'
+JUZHEN1.C(8): error C141: syntax error near 'while'
+JUZHEN1.C(8): error C141: syntax error near '1'
+JUZHEN1.C(10): error C231: 'P3': redefinition
+JUZHEN1.C(10): error C231: 'P3': redefinition
+JUZHEN1.C(11): error C141: syntax error near 'if'
+JUZHEN1.C(11): error C141: syntax error near '&', expected ')'
+JUZHEN1.C(13): error C141: syntax error near '5'
+JUZHEN1.C(13): error C231: 'delay': redefinition
+JUZHEN1.C(14): error C231: 'key_l': redefinition
+JUZHEN1.C(14): error C247: non-address/-constant initializer
+JUZHEN1.C(15): error C279: 'P3': multiple initialization
+JUZHEN1.C(15): error C231: 'P3': redefinition
+JUZHEN1.C(15): error C247: non-address/-constant initializer
+JUZHEN1.C(15): error C231: 'P3': redefinition
+JUZHEN1.C(16): error C231: 'key_h': redefinition
+JUZHEN1.C(16): error C247: non-address/-constant initializer
+JUZHEN1.C(17): error C141: syntax error near 'while'
+JUZHEN1.C(17): error C141: syntax error near '&', expected ')'
+JUZHEN1.C(20): error C231: 'x': redefinition
+JUZHEN1.C(20): error C247: non-address/-constant initializer
+JUZHEN1.C(21): error C141: syntax error near 'switch'
+JUZHEN1.C(22): error C231: 'key_check': redefinition
+JUZHEN1.C(23): error C172: 'case': missing enclosing switch
+JUZHEN1.C(23): error C171: 'break': missing enclosing loop
+JUZHEN1.C(24): error C172: 'case': missing enclosing switch
+JUZHEN1.C(24): error C171: 'break': missing enclosing loop
+JUZHEN1.C(25): error C172: 'case': missing enclosing switch
+JUZHEN1.C(25): error C171: 'break': missing enclosing loop
+JUZHEN1.C(26): error C172: 'case': missing enclosing switch
+JUZHEN1.C(26): error C171: 'break': missing enclosing loop
+JUZHEN1.C(27): error C172: 'case': missing enclosing switch
+JUZHEN1.C(27): error C171: 'break': missing enclosing loop
+JUZHEN1.C(28): error C172: 'case': missing enclosing switch
+JUZHEN1.C(28): error C171: 'break': missing enclosing loop
+JUZHEN1.C(29): error C172: 'case': missing enclosing switch
+JUZHEN1.C(29): error C171: 'break': missing enclosing loop
+JUZHEN1.C(30): error C172: 'case': missing enclosing switch
+JUZHEN1.C(30): error C171: 'break': missing enclosing loop
+JUZHEN1.C(31): error C172: 'case': missing enclosing switch
+JUZHEN1.C(31): error C171: 'break': missing enclosing loop
+JUZHEN1.C(32): error C172: 'case': missing enclosing switch
+JUZHEN1.C(32): error C171: 'break': missing enclosing loop
+JUZHEN1.C(34): error C231: 'key_check': redefinition
+JUZHEN1.C(35): error C141: syntax error near 'return'
+compiling main.c...
+MAIN.C(4): error C141: syntax error near 'unsigned'
+compiling display.c...
+DISPLAY.C(4): error C141: syntax error near 'void'
+DISPLAY.C(5): error C231: 'show': redefinition
+DISPLAY.C(5): error C141: syntax error near '{'
+DISPLAY.C(6): error C231: 'wei': redefinition
+DISPLAY.C(6): error C231: 'wei': redefinition
+DISPLAY.C(7): error C231: 'P0': redefinition
+DISPLAY.C(7): error C231: 'P0': redefinition
+DISPLAY.C(8): error C279: 'wei': multiple initialization
+DISPLAY.C(8): error C231: 'wei': redefinition
+DISPLAY.C(8): error C231: 'wei': redefinition
+DISPLAY.C(10): error C231: 'dun': redefinition
+DISPLAY.C(10): error C231: 'dun': redefinition
+DISPLAY.C(11): error C279: 'P0': multiple initialization
+DISPLAY.C(11): error C231: 'P0': redefinition
+DISPLAY.C(11): error C202: 'x': undefined identifier
+DISPLAY.C(11): error C231: 'P0': redefinition
+DISPLAY.C(12): error C279: 'dun': multiple initialization
+DISPLAY.C(12): error C231: 'dun': redefinition
+DISPLAY.C(12): error C231: 'dun': redefinition
+DISPLAY.C(13): error C141: syntax error near '}'
+compiling delay.c...
+DELAY.C(4): error C141: syntax error near 'void'
+DELAY.C(5): error C231: 'delay': redefinition
+DELAY.C(5): error C141: syntax error near '{'
+DELAY.C(7): error C141: syntax error near 'for'
+DELAY.C(7): error C141: syntax error near '=', expected ')'
+DELAY.C(7): error C129: missing ';' before '>'
+Target not created
+Build target 'Target 1'
+compiling juzhen1.c...
+JUZHEN1.C(5): error C141: syntax error near 'unsigned'
+JUZHEN1.C(6): error C141: syntax error near '{'
+JUZHEN1.C(8): error C141: syntax error near 'while'
+JUZHEN1.C(8): error C141: syntax error near '1'
+JUZHEN1.C(10): error C231: 'P3': redefinition
+JUZHEN1.C(10): error C231: 'P3': redefinition
+JUZHEN1.C(11): error C141: syntax error near 'if'
+JUZHEN1.C(11): error C141: syntax error near '&', expected ')'
+JUZHEN1.C(13): error C141: syntax error near '5'
+JUZHEN1.C(13): error C231: 'delay': redefinition
+JUZHEN1.C(14): error C231: 'key_l': redefinition
+JUZHEN1.C(14): error C247: non-address/-constant initializer
+JUZHEN1.C(15): error C279: 'P3': multiple initialization
+JUZHEN1.C(15): error C231: 'P3': redefinition
+JUZHEN1.C(15): error C247: non-address/-constant initializer
+JUZHEN1.C(15): error C231: 'P3': redefinition
+JUZHEN1.C(16): error C231: 'key_h': redefinition
+JUZHEN1.C(16): error C247: non-address/-constant initializer
+JUZHEN1.C(17): error C141: syntax error near 'while'
+JUZHEN1.C(17): error C141: syntax error near '&', expected ')'
+JUZHEN1.C(20): error C247: non-address/-constant initializer
+JUZHEN1.C(21): error C141: syntax error near 'switch'
+JUZHEN1.C(22): error C231: 'key_check': redefinition
+JUZHEN1.C(23): error C172: 'case': missing enclosing switch
+JUZHEN1.C(23): error C171: 'break': missing enclosing loop
+JUZHEN1.C(24): error C172: 'case': missing enclosing switch
+JUZHEN1.C(24): error C171: 'break': missing enclosing loop
+JUZHEN1.C(25): error C172: 'case': missing enclosing switch
+JUZHEN1.C(25): error C171: 'break': missing enclosing loop
+JUZHEN1.C(26): error C172: 'case': missing enclosing switch
+JUZHEN1.C(26): error C171: 'break': missing enclosing loop
+JUZHEN1.C(27): error C172: 'case': missing enclosing switch
+JUZHEN1.C(27): error C171: 'break': missing enclosing loop
+JUZHEN1.C(28): error C172: 'case': missing enclosing switch
+JUZHEN1.C(28): error C171: 'break': missing enclosing loop
+JUZHEN1.C(29): error C172: 'case': missing enclosing switch
+JUZHEN1.C(29): error C171: 'break': missing enclosing loop
+JUZHEN1.C(30): error C172: 'case': missing enclosing switch
+JUZHEN1.C(30): error C171: 'break': missing enclosing loop
+JUZHEN1.C(31): error C172: 'case': missing enclosing switch
+JUZHEN1.C(31): error C171: 'break': missing enclosing loop
+JUZHEN1.C(32): error C172: 'case': missing enclosing switch
+JUZHEN1.C(32): error C171: 'break': missing enclosing loop
+JUZHEN1.C(34): error C231: 'key_check': redefinition
+JUZHEN1.C(35): error C141: syntax error near 'return'
+compiling main.c...
+MAIN.C(4): error C141: syntax error near 'unsigned'
+compiling display.c...
+DISPLAY.C(4): error C141: syntax error near 'void'
+DISPLAY.C(5): error C231: 'show': redefinition
+DISPLAY.C(5): error C141: syntax error near '{'
+DISPLAY.C(6): error C231: 'wei': redefinition
+DISPLAY.C(6): error C231: 'wei': redefinition
+DISPLAY.C(7): error C231: 'P0': redefinition
+DISPLAY.C(7): error C231: 'P0': redefinition
+DISPLAY.C(8): error C279: 'wei': multiple initialization
+DISPLAY.C(8): error C231: 'wei': redefinition
+DISPLAY.C(8): error C231: 'wei': redefinition
+DISPLAY.C(10): error C231: 'dun': redefinition
+DISPLAY.C(10): error C231: 'dun': redefinition
+DISPLAY.C(11): error C279: 'P0': multiple initialization
+DISPLAY.C(11): error C231: 'P0': redefinition
+DISPLAY.C(11): error C202: 'x': undefined identifier
+DISPLAY.C(11): error C231: 'P0': redefinition
+DISPLAY.C(12): error C279: 'dun': multiple initialization
+DISPLAY.C(12): error C231: 'dun': redefinition
+DISPLAY.C(12): error C231: 'dun': redefinition
+DISPLAY.C(13): error C141: syntax error near '}'
+compiling delay.c...
+DELAY.C(4): error C141: syntax error near 'void'
+DELAY.C(5): error C231: 'delay': redefinition
+DELAY.C(5): error C141: syntax error near '{'
+DELAY.C(7): error C141: syntax error near 'for'
+DELAY.C(7): error C141: syntax error near '=', expected ')'
+DELAY.C(7): error C129: missing ';' before '>'
+Target not created
+Build target 'Target 1'
+compiling juzhen1.c...
+JUZHEN1.C(5): error C141: syntax error near 'unsigned'
+JUZHEN1.C(6): error C141: syntax error near '{'
+JUZHEN1.C(8): error C141: syntax error near 'while'
+JUZHEN1.C(8): error C141: syntax error near '1'
+JUZHEN1.C(10): error C231: 'P3': redefinition
+JUZHEN1.C(10): error C231: 'P3': redefinition
+JUZHEN1.C(11): error C141: syntax error near 'if'
+JUZHEN1.C(11): error C141: syntax error near '&', expected ')'
+JUZHEN1.C(13): error C141: syntax error near '5'
+JUZHEN1.C(13): error C231: 'delay': redefinition
+JUZHEN1.C(14): error C231: 'key_l': redefinition
+JUZHEN1.C(14): error C247: non-address/-constant initializer
+JUZHEN1.C(15): error C279: 'P3': multiple initialization
+JUZHEN1.C(15): error C231: 'P3': redefinition
+JUZHEN1.C(15): error C247: non-address/-constant initializer
+JUZHEN1.C(15): error C231: 'P3': redefinition
+JUZHEN1.C(16): error C231: 'key_h': redefinition
+JUZHEN1.C(16): error C247: non-address/-constant initializer
+JUZHEN1.C(17): error C141: syntax error near 'while'
+JUZHEN1.C(17): error C141: syntax error near '&', expected ')'
+JUZHEN1.C(20): error C247: non-address/-constant initializer
+JUZHEN1.C(21): error C141: syntax error near 'switch'
+JUZHEN1.C(22): error C231: 'key_check': redefinition
+JUZHEN1.C(23): error C172: 'case': missing enclosing switch
+JUZHEN1.C(23): error C171: 'break': missing enclosing loop
+JUZHEN1.C(24): error C172: 'case': missing enclosing switch
+JUZHEN1.C(24): error C171: 'break': missing enclosing loop
+JUZHEN1.C(25): error C172: 'case': missing enclosing switch
+JUZHEN1.C(25): error C171: 'break': missing enclosing loop
+JUZHEN1.C(26): error C172: 'case': missing enclosing switch
+JUZHEN1.C(26): error C171: 'break': missing enclosing loop
+JUZHEN1.C(27): error C172: 'case': missing enclosing switch
+JUZHEN1.C(27): error C171: 'break': missing enclosing loop
+JUZHEN1.C(28): error C172: 'case': missing enclosing switch
+JUZHEN1.C(28): error C171: 'break': missing enclosing loop
+JUZHEN1.C(29): error C172: 'case': missing enclosing switch
+JUZHEN1.C(29): error C171: 'break': missing enclosing loop
+JUZHEN1.C(30): error C172: 'case': missing enclosing switch
+JUZHEN1.C(30): error C171: 'break': missing enclosing loop
+JUZHEN1.C(31): error C172: 'case': missing enclosing switch
+JUZHEN1.C(31): error C171: 'break': missing enclosing loop
+JUZHEN1.C(32): error C172: 'case': missing enclosing switch
+JUZHEN1.C(32): error C171: 'break': missing enclosing loop
+JUZHEN1.C(34): error C231: 'key_check': redefinition
+JUZHEN1.C(35): error C141: syntax error near 'return'
+compiling main.c...
+MAIN.C(4): error C141: syntax error near 'unsigned'
+compiling display.c...
+DISPLAY.C(4): error C141: syntax error near 'void'
+DISPLAY.C(5): error C231: 'show': redefinition
+DISPLAY.C(5): error C141: syntax error near '{'
+DISPLAY.C(6): error C231: 'wei': redefinition
+DISPLAY.C(6): error C231: 'wei': redefinition
+DISPLAY.C(7): error C231: 'P0': redefinition
+DISPLAY.C(7): error C231: 'P0': redefinition
+DISPLAY.C(8): error C279: 'wei': multiple initialization
+DISPLAY.C(8): error C231: 'wei': redefinition
+DISPLAY.C(8): error C231: 'wei': redefinition
+DISPLAY.C(10): error C231: 'dun': redefinition
+DISPLAY.C(10): error C231: 'dun': redefinition
+DISPLAY.C(11): error C279: 'P0': multiple initialization
+DISPLAY.C(11): error C231: 'P0': redefinition
+DISPLAY.C(11): error C202: 'x': undefined identifier
+DISPLAY.C(11): error C231: 'P0': redefinition
+DISPLAY.C(12): error C279: 'dun': multiple initialization
+DISPLAY.C(12): error C231: 'dun': redefinition
+DISPLAY.C(12): error C231: 'dun': redefinition
+DISPLAY.C(13): error C141: syntax error near '}'
+compiling delay.c...
+DELAY.C(4): error C141: syntax error near 'void'
+DELAY.C(5): error C231: 'delay': redefinition
+DELAY.C(5): error C141: syntax error near '{'
+DELAY.C(7): error C141: syntax error near 'for'
+DELAY.C(7): error C141: syntax error near '=', expected ')'
+DELAY.C(7): error C129: missing ';' before '>'
+Target not created
+Build target 'Target 1'
+compiling juzhen1.c...
+JUZHEN1.C(5): error C141: syntax error near 'unsigned'
+JUZHEN1.C(6): error C141: syntax error near '{'
+JUZHEN1.C(8): error C141: syntax error near 'while'
+JUZHEN1.C(8): error C141: syntax error near '1'
+JUZHEN1.C(10): error C231: 'P3': redefinition
+JUZHEN1.C(10): error C231: 'P3': redefinition
+JUZHEN1.C(11): error C141: syntax error near 'if'
+JUZHEN1.C(11): error C141: syntax error near '&', expected ')'
+JUZHEN1.C(13): error C141: syntax error near '5'
+JUZHEN1.C(13): error C231: 'delay': redefinition
+JUZHEN1.C(14): error C231: 'key_l': redefinition
+JUZHEN1.C(14): error C247: non-address/-constant initializer
+JUZHEN1.C(15): error C279: 'P3': multiple initialization
+JUZHEN1.C(15): error C231: 'P3': redefinition
+JUZHEN1.C(15): error C247: non-address/-constant initializer
+JUZHEN1.C(15): error C231: 'P3': redefinition
+JUZHEN1.C(16): error C231: 'key_h': redefinition
+JUZHEN1.C(16): error C247: non-address/-constant initializer
+JUZHEN1.C(17): error C141: syntax error near 'while'
+JUZHEN1.C(17): error C141: syntax error near '&', expected ')'
+JUZHEN1.C(20): error C247: non-address/-constant initializer
+JUZHEN1.C(21): error C141: syntax error near 'switch'
+JUZHEN1.C(22): error C231: 'key_check': redefinition
+JUZHEN1.C(23): error C172: 'case': missing enclosing switch
+JUZHEN1.C(23): error C171: 'break': missing enclosing loop
+JUZHEN1.C(24): error C172: 'case': missing enclosing switch
+JUZHEN1.C(24): error C171: 'break': missing enclosing loop
+JUZHEN1.C(25): error C172: 'case': missing enclosing switch
+JUZHEN1.C(25): error C171: 'break': missing enclosing loop
+JUZHEN1.C(26): error C172: 'case': missing enclosing switch
+JUZHEN1.C(26): error C171: 'break': missing enclosing loop
+JUZHEN1.C(27): error C172: 'case': missing enclosing switch
+JUZHEN1.C(27): error C171: 'break': missing enclosing loop
+JUZHEN1.C(28): error C172: 'case': missing enclosing switch
+JUZHEN1.C(28): error C171: 'break': missing enclosing loop
+JUZHEN1.C(29): error C172: 'case': missing enclosing switch
+JUZHEN1.C(29): error C171: 'break': missing enclosing loop
+JUZHEN1.C(30): error C172: 'case': missing enclosing switch
+JUZHEN1.C(30): error C171: 'break': missing enclosing loop
+JUZHEN1.C(31): error C172: 'case': missing enclosing switch
+JUZHEN1.C(31): error C171: 'break': missing enclosing loop
+JUZHEN1.C(32): error C172: 'case': missing enclosing switch
+JUZHEN1.C(32): error C171: 'break': missing enclosing loop
+JUZHEN1.C(34): error C231: 'key_check': redefinition
+JUZHEN1.C(35): error C141: syntax error near 'return'
+compiling main.c...
+MAIN.C(4): error C141: syntax error near 'unsigned'
+compiling display.c...
+DISPLAY.C(4): error C141: syntax error near 'void'
+DISPLAY.C(5): error C231: 'show': redefinition
+DISPLAY.C(5): error C141: syntax error near '{'
+DISPLAY.C(6): error C231: 'wei': redefinition
+DISPLAY.C(6): error C231: 'wei': redefinition
+DISPLAY.C(7): error C231: 'P0': redefinition
+DISPLAY.C(7): error C231: 'P0': redefinition
+DISPLAY.C(8): error C279: 'wei': multiple initialization
+DISPLAY.C(8): error C231: 'wei': redefinition
+DISPLAY.C(8): error C231: 'wei': redefinition
+DISPLAY.C(10): error C231: 'dun': redefinition
+DISPLAY.C(10): error C231: 'dun': redefinition
+DISPLAY.C(11): error C279: 'P0': multiple initialization
+DISPLAY.C(11): error C231: 'P0': redefinition
+DISPLAY.C(11): error C202: 'x': undefined identifier
+DISPLAY.C(11): error C231: 'P0': redefinition
+DISPLAY.C(12): error C279: 'dun': multiple initialization
+DISPLAY.C(12): error C231: 'dun': redefinition
+DISPLAY.C(12): error C231: 'dun': redefinition
+DISPLAY.C(13): error C141: syntax error near '}'
+compiling delay.c...
+DELAY.C(4): error C141: syntax error near 'void'
+DELAY.C(5): error C231: 'delay': redefinition
+DELAY.C(5): error C141: syntax error near '{'
+DELAY.C(7): error C141: syntax error near 'for'
+DELAY.C(7): error C141: syntax error near '=', expected ')'
+DELAY.C(7): error C129: missing ';' before '>'
+Target not created
+Build target 'Target 1'
+compiling juzhen1.c...
+JUZHEN1.C(5): error C141: syntax error near 'unsigned'
+JUZHEN1.C(6): error C141: syntax error near '{'
+JUZHEN1.C(8): error C141: syntax error near 'while'
+JUZHEN1.C(8): error C141: syntax error near '1'
+JUZHEN1.C(10): error C231: 'P3': redefinition
+JUZHEN1.C(10): error C231: 'P3': redefinition
+JUZHEN1.C(11): error C141: syntax error near 'if'
+JUZHEN1.C(11): error C141: syntax error near '&', expected ')'
+JUZHEN1.C(13): error C141: syntax error near '5'
+JUZHEN1.C(13): error C231: 'delay': redefinition
+JUZHEN1.C(14): error C231: 'key_l': redefinition
+JUZHEN1.C(14): error C247: non-address/-constant initializer
+JUZHEN1.C(15): error C279: 'P3': multiple initialization
+JUZHEN1.C(15): error C231: 'P3': redefinition
+JUZHEN1.C(15): error C247: non-address/-constant initializer
+JUZHEN1.C(15): error C231: 'P3': redefinition
+JUZHEN1.C(16): error C231: 'key_h': redefinition
+JUZHEN1.C(16): error C247: non-address/-constant initializer
+JUZHEN1.C(17): error C141: syntax error near 'while'
+JUZHEN1.C(17): error C141: syntax error near '&', expected ')'
+JUZHEN1.C(20): error C247: non-address/-constant initializer
+JUZHEN1.C(21): error C141: syntax error near 'switch'
+JUZHEN1.C(22): error C231: 'key_check': redefinition
+JUZHEN1.C(23): error C172: 'case': missing enclosing switch
+JUZHEN1.C(23): error C171: 'break': missing enclosing loop
+JUZHEN1.C(24): error C172: 'case': missing enclosing switch
+JUZHEN1.C(24): error C171: 'break': missing enclosing loop
+JUZHEN1.C(25): error C172: 'case': missing enclosing switch
+JUZHEN1.C(25): error C171: 'break': missing enclosing loop
+JUZHEN1.C(26): error C172: 'case': missing enclosing switch
+JUZHEN1.C(26): error C171: 'break': missing enclosing loop
+JUZHEN1.C(27): error C172: 'case': missing enclosing switch
+JUZHEN1.C(27): error C171: 'break': missing enclosing loop
+JUZHEN1.C(28): error C172: 'case': missing enclosing switch
+JUZHEN1.C(28): error C171: 'break': missing enclosing loop
+JUZHEN1.C(29): error C172: 'case': missing enclosing switch
+JUZHEN1.C(29): error C171: 'break': missing enclosing loop
+JUZHEN1.C(30): error C172: 'case': missing enclosing switch
+JUZHEN1.C(30): error C171: 'break': missing enclosing loop
+JUZHEN1.C(31): error C172: 'case': missing enclosing switch
+JUZHEN1.C(31): error C171: 'break': missing enclosing loop
+JUZHEN1.C(32): error C172: 'case': missing enclosing switch
+JUZHEN1.C(32): error C171: 'break': missing enclosing loop
+JUZHEN1.C(34): error C231: 'key_check': redefinition
+JUZHEN1.C(35): error C141: syntax error near 'return'
+compiling main.c...
+MAIN.C(4): error C141: syntax error near 'unsigned'
+compiling display.c...
+DISPLAY.C(4): error C141: syntax error near 'void'
+DISPLAY.C(5): error C231: 'show': redefinition
+DISPLAY.C(5): error C141: syntax error near '{'
+DISPLAY.C(6): error C231: 'wei': redefinition
+DISPLAY.C(6): error C231: 'wei': redefinition
+DISPLAY.C(7): error C231: 'P0': redefinition
+DISPLAY.C(7): error C231: 'P0': redefinition
+DISPLAY.C(8): error C279: 'wei': multiple initialization
+DISPLAY.C(8): error C231: 'wei': redefinition
+DISPLAY.C(8): error C231: 'wei': redefinition
+DISPLAY.C(10): error C231: 'dun': redefinition
+DISPLAY.C(10): error C231: 'dun': redefinition
+DISPLAY.C(11): error C279: 'P0': multiple initialization
+DISPLAY.C(11): error C231: 'P0': redefinition
+DISPLAY.C(11): error C202: 'x': undefined identifier
+DISPLAY.C(11): error C231: 'P0': redefinition
+DISPLAY.C(12): error C279: 'dun': multiple initialization
+DISPLAY.C(12): error C231: 'dun': redefinition
+DISPLAY.C(12): error C231: 'dun': redefinition
+DISPLAY.C(13): error C141: syntax error near '}'
+compiling delay.c...
+DELAY.C(4): error C141: syntax error near 'void'
+DELAY.C(5): error C231: 'delay': redefinition
+DELAY.C(5): error C141: syntax error near '{'
+DELAY.C(7): error C141: syntax error near 'for'
+DELAY.C(7): error C141: syntax error near '=', expected ')'
+DELAY.C(7): error C129: missing ';' before '>'
+Target not created
+Build target 'Target 1'
+compiling juzhen1.c...
+JUZHEN1.C(13): error C267: 'delay': requires ANSI-style prototype
+JUZHEN1.C(20): error C202: 'x': undefined identifier
+JUZHEN1.C(23): error C202: 'x': undefined identifier
+JUZHEN1.C(24): error C202: 'x': undefined identifier
+JUZHEN1.C(25): error C202: 'x': undefined identifier
+JUZHEN1.C(26): error C202: 'x': undefined identifier
+JUZHEN1.C(27): error C202: 'x': undefined identifier
+JUZHEN1.C(28): error C202: 'x': undefined identifier
+JUZHEN1.C(29): error C202: 'x': undefined identifier
+JUZHEN1.C(30): error C202: 'x': undefined identifier
+JUZHEN1.C(31): error C202: 'x': undefined identifier
+JUZHEN1.C(32): error C202: 'x': undefined identifier
+JUZHEN1.C(36): error C141: syntax error near ';'
+compiling main.c...
+compiling display.c...
+DISPLAY.C(11): error C202: 'x': undefined identifier
+DISPLAY.C(13): error C141: syntax error near ';'
+compiling delay.c...
+DELAY.C(9): error C141: syntax error near ';'
+Target not created
+Build target 'Target 1'
+compiling juzhen1.c...
+JUZHEN1.C(20): error C202: 'x': undefined identifier
+JUZHEN1.C(23): error C202: 'x': undefined identifier
+JUZHEN1.C(24): error C202: 'x': undefined identifier
+JUZHEN1.C(25): error C202: 'x': undefined identifier
+JUZHEN1.C(26): error C202: 'x': undefined identifier
+JUZHEN1.C(27): error C202: 'x': undefined identifier
+JUZHEN1.C(28): error C202: 'x': undefined identifier
+JUZHEN1.C(29): error C202: 'x': undefined identifier
+JUZHEN1.C(30): error C202: 'x': undefined identifier
+JUZHEN1.C(31): error C202: 'x': undefined identifier
+JUZHEN1.C(32): error C202: 'x': undefined identifier
+JUZHEN1.C(36): error C141: syntax error near ';'
+compiling main.c...
+compiling display.c...
+DISPLAY.C(11): error C202: 'x': undefined identifier
+DISPLAY.C(13): error C141: syntax error near ';'
+compiling delay.c...
+DELAY.C(9): error C141: syntax error near ';'
+Target not created
+Build target 'Target 1'
+compiling juzhen1.c...
+JUZHEN1.C(36): error C141: syntax error near ';'
+compiling main.c...
+compiling display.c...
+DISPLAY.C(13): error C141: syntax error near ';'
+compiling delay.c...
+DELAY.C(9): error C141: syntax error near ';'
+Target not created
+Build target 'Target 1'
+compiling juzhen1.c...
+INIT.H(40): error C141: syntax error near 'unsigned'
+compiling main.c...
+INIT.H(40): error C141: syntax error near 'unsigned'
+compiling display.c...
+INIT.H(40): error C141: syntax error near 'unsigned'
+compiling delay.c...
+INIT.H(40): error C141: syntax error near 'unsigned'
+DELAY.C(9): error C141: syntax error near ';'
+Target not created
+Build target 'Target 1'
+compiling juzhen1.c...
+JUZHEN1.C(5): error C141: syntax error near 'unsigned'
+JUZHEN1.C(6): error C141: syntax error near '{'
+JUZHEN1.C(8): error C141: syntax error near 'while'
+JUZHEN1.C(8): error C141: syntax error near '1'
+JUZHEN1.C(10): error C231: 'P3': redefinition
+JUZHEN1.C(10): error C231: 'P3': redefinition
+JUZHEN1.C(11): error C141: syntax error near 'if'
+JUZHEN1.C(11): error C141: syntax error near '&', expected ')'
+JUZHEN1.C(13): error C141: syntax error near '5'
+JUZHEN1.C(13): error C231: '_delay': redefinition
+JUZHEN1.C(14): error C231: 'key_l': redefinition
+JUZHEN1.C(14): error C247: non-address/-constant initializer
+JUZHEN1.C(15): error C279: 'P3': multiple initialization
+JUZHEN1.C(15): error C231: 'P3': redefinition
+JUZHEN1.C(15): error C247: non-address/-constant initializer
+JUZHEN1.C(15): error C231: 'P3': redefinition
+JUZHEN1.C(16): error C231: 'key_h': redefinition
+JUZHEN1.C(16): error C247: non-address/-constant initializer
+JUZHEN1.C(17): error C141: syntax error near 'while'
+JUZHEN1.C(17): error C141: syntax error near '&', expected ')'
+JUZHEN1.C(20): error C231: 'x': redefinition
+JUZHEN1.C(20): error C247: non-address/-constant initializer
+JUZHEN1.C(21): error C141: syntax error near 'switch'
+JUZHEN1.C(22): error C231: 'key_check': redefinition
+JUZHEN1.C(23): error C172: 'case': missing enclosing switch
+JUZHEN1.C(23): error C171: 'break': missing enclosing loop
+JUZHEN1.C(24): error C172: 'case': missing enclosing switch
+JUZHEN1.C(24): error C171: 'break': missing enclosing loop
+JUZHEN1.C(25): error C172: 'case': missing enclosing switch
+JUZHEN1.C(25): error C171: 'break': missing enclosing loop
+JUZHEN1.C(26): error C172: 'case': missing enclosing switch
+JUZHEN1.C(26): error C171: 'break': missing enclosing loop
+JUZHEN1.C(27): error C172: 'case': missing enclosing switch
+JUZHEN1.C(27): error C171: 'break': missing enclosing loop
+JUZHEN1.C(28): error C172: 'case': missing enclosing switch
+JUZHEN1.C(28): error C171: 'break': missing enclosing loop
+JUZHEN1.C(29): error C172: 'case': missing enclosing switch
+JUZHEN1.C(29): error C171: 'break': missing enclosing loop
+JUZHEN1.C(30): error C172: 'case': missing enclosing switch
+JUZHEN1.C(30): error C171: 'break': missing enclosing loop
+JUZHEN1.C(31): error C172: 'case': missing enclosing switch
+JUZHEN1.C(31): error C171: 'break': missing enclosing loop
+JUZHEN1.C(32): error C172: 'case': missing enclosing switch
+JUZHEN1.C(32): error C171: 'break': missing enclosing loop
+JUZHEN1.C(34): error C231: 'key_check': redefinition
+JUZHEN1.C(35): error C141: syntax error near 'return'
+compiling main.c...
+MAIN.C(4): error C141: syntax error near 'void'
+MAIN.C(5): error C141: syntax error near '{'
+MAIN.C(9): error C231: 'show': redefinition
+MAIN.C(11): error C141: syntax error near '}'
+compiling display.c...
+DISPLAY.C(4): error C141: syntax error near 'void'
+DISPLAY.C(5): error C231: 'show': redefinition
+DISPLAY.C(5): error C141: syntax error near '{'
+DISPLAY.C(6): error C231: 'wei': redefinition
+DISPLAY.C(6): error C231: 'wei': redefinition
+DISPLAY.C(7): error C231: 'P0': redefinition
+DISPLAY.C(7): error C231: 'P0': redefinition
+DISPLAY.C(8): error C279: 'wei': multiple initialization
+DISPLAY.C(8): error C231: 'wei': redefinition
+DISPLAY.C(8): error C231: 'wei': redefinition
+DISPLAY.C(10): error C231: 'dun': redefinition
+DISPLAY.C(10): error C231: 'dun': redefinition
+DISPLAY.C(11): error C279: 'P0': multiple initialization
+DISPLAY.C(11): error C231: 'P0': redefinition
+DISPLAY.C(11): error C231: 'P0': redefinition
+DISPLAY.C(12): error C279: 'dun': multiple initialization
+DISPLAY.C(12): error C231: 'dun': redefinition
+DISPLAY.C(12): error C231: 'dun': redefinition
+DISPLAY.C(13): error C141: syntax error near '}'
+compiling delay.c...
+DELAY.C(4): error C141: syntax error near 'void'
+DELAY.C(5): error C231: '_delay': redefinition
+DELAY.C(5): error C141: syntax error near '{'
+DELAY.C(7): error C141: syntax error near 'for'
+DELAY.C(7): error C141: syntax error near '=', expected ')'
+DELAY.C(7): error C129: missing ';' before '>'
+Target not created
+Build target 'Target 1'
+compiling juzhen1.c...
+JUZHEN1.C(5): error C141: syntax error near 'unsigned'
+JUZHEN1.C(6): error C141: syntax error near '{'
+JUZHEN1.C(8): error C141: syntax error near 'while'
+JUZHEN1.C(8): error C141: syntax error near '1'
+JUZHEN1.C(10): error C231: 'P3': redefinition
+JUZHEN1.C(10): error C231: 'P3': redefinition
+JUZHEN1.C(11): error C141: syntax error near 'if'
+JUZHEN1.C(11): error C141: syntax error near '&', expected ')'
+JUZHEN1.C(13): error C141: syntax error near '5'
+JUZHEN1.C(13): error C231: '_delay': redefinition
+JUZHEN1.C(14): error C231: 'key_l': redefinition
+JUZHEN1.C(14): error C247: non-address/-constant initializer
+JUZHEN1.C(15): error C279: 'P3': multiple initialization
+JUZHEN1.C(15): error C231: 'P3': redefinition
+JUZHEN1.C(15): error C247: non-address/-constant initializer
+JUZHEN1.C(15): error C231: 'P3': redefinition
+JUZHEN1.C(16): error C231: 'key_h': redefinition
+JUZHEN1.C(16): error C247: non-address/-constant initializer
+JUZHEN1.C(17): error C141: syntax error near 'while'
+JUZHEN1.C(17): error C141: syntax error near '&', expected ')'
+JUZHEN1.C(20): error C231: 'x': redefinition
+JUZHEN1.C(20): error C247: non-address/-constant initializer
+JUZHEN1.C(21): error C141: syntax error near 'switch'
+JUZHEN1.C(22): error C129: missing ';' before '{'
+compiling main.c...
+MAIN.C(4): error C141: syntax error near 'void'
+MAIN.C(5): error C141: syntax error near '{'
+MAIN.C(9): error C231: 'show': redefinition
+MAIN.C(11): error C141: syntax error near '}'
+compiling display.c...
+DISPLAY.C(4): error C141: syntax error near 'void'
+DISPLAY.C(5): error C231: 'show': redefinition
+DISPLAY.C(5): error C141: syntax error near '{'
+DISPLAY.C(6): error C231: 'wei': redefinition
+DISPLAY.C(6): error C231: 'wei': redefinition
+DISPLAY.C(7): error C231: 'P0': redefinition
+DISPLAY.C(7): error C231: 'P0': redefinition
+DISPLAY.C(8): error C279: 'wei': multiple initialization
+DISPLAY.C(8): error C231: 'wei': redefinition
+DISPLAY.C(8): error C231: 'wei': redefinition
+DISPLAY.C(10): error C231: 'dun': redefinition
+DISPLAY.C(10): error C231: 'dun': redefinition
+DISPLAY.C(11): error C279: 'P0': multiple initialization
+DISPLAY.C(11): error C231: 'P0': redefinition
+DISPLAY.C(11): error C231: 'P0': redefinition
+DISPLAY.C(12): error C279: 'dun': multiple initialization
+DISPLAY.C(12): error C231: 'dun': redefinition
+DISPLAY.C(12): error C231: 'dun': redefinition
+DISPLAY.C(13): error C141: syntax error near '}'
+compiling delay.c...
+DELAY.C(4): error C141: syntax error near 'void'
+DELAY.C(5): error C231: '_delay': redefinition
+DELAY.C(5): error C141: syntax error near '{'
+DELAY.C(7): error C141: syntax error near 'for'
+DELAY.C(7): error C141: syntax error near '=', expected ')'
+DELAY.C(7): error C129: missing ';' before '>'
+Target not created
+Build target 'Target 1'
+compiling juzhen1.c...
+JUZHEN1.C(5): error C141: syntax error near 'unsigned'
+JUZHEN1.C(6): error C141: syntax error near '{'
+JUZHEN1.C(8): error C141: syntax error near 'while'
+JUZHEN1.C(8): error C141: syntax error near '1'
+JUZHEN1.C(10): error C231: 'P3': redefinition
+JUZHEN1.C(10): error C231: 'P3': redefinition
+JUZHEN1.C(11): error C141: syntax error near 'if'
+JUZHEN1.C(11): error C141: syntax error near '&', expected ')'
+JUZHEN1.C(13): error C141: syntax error near '5'
+JUZHEN1.C(13): error C231: '_delay': redefinition
+JUZHEN1.C(14): error C141: syntax error near 'if'
+JUZHEN1.C(14): error C141: syntax error near '&', expected ')'
+JUZHEN1.C(16): error C231: 'key_l': redefinition
+JUZHEN1.C(16): error C247: non-address/-constant initializer
+JUZHEN1.C(17): error C279: 'P3': multiple initialization
+JUZHEN1.C(17): error C231: 'P3': redefinition
+JUZHEN1.C(17): error C247: non-address/-constant initializer
+JUZHEN1.C(17): error C231: 'P3': redefinition
+JUZHEN1.C(18): error C231: 'key_h': redefinition
+JUZHEN1.C(18): error C247: non-address/-constant initializer
+JUZHEN1.C(19): error C141: syntax error near 'while'
+JUZHEN1.C(19): error C141: syntax error near '&', expected ')'
+JUZHEN1.C(23): error C231: 'x': redefinition
+JUZHEN1.C(23): error C247: non-address/-constant initializer
+JUZHEN1.C(24): error C141: syntax error near 'switch'
+JUZHEN1.C(25): error C129: missing ';' before '{'
+compiling main.c...
+MAIN.C(4): error C141: syntax error near 'void'
+MAIN.C(5): error C141: syntax error near '{'
+MAIN.C(9): error C231: 'show': redefinition
+MAIN.C(11): error C141: syntax error near '}'
+compiling display.c...
+DISPLAY.C(4): error C141: syntax error near 'void'
+DISPLAY.C(5): error C231: 'show': redefinition
+DISPLAY.C(5): error C141: syntax error near '{'
+DISPLAY.C(6): error C231: 'wei': redefinition
+DISPLAY.C(6): error C231: 'wei': redefinition
+DISPLAY.C(7): error C231: 'P0': redefinition
+DISPLAY.C(7): error C231: 'P0': redefinition
+DISPLAY.C(8): error C279: 'wei': multiple initialization
+DISPLAY.C(8): error C231: 'wei': redefinition
+DISPLAY.C(8): error C231: 'wei': redefinition
+DISPLAY.C(10): error C231: 'dun': redefinition
+DISPLAY.C(10): error C231: 'dun': redefinition
+DISPLAY.C(11): error C279: 'P0': multiple initialization
+DISPLAY.C(11): error C231: 'P0': redefinition
+DISPLAY.C(11): error C231: 'P0': redefinition
+DISPLAY.C(12): error C279: 'dun': multiple initialization
+DISPLAY.C(12): error C231: 'dun': redefinition
+DISPLAY.C(12): error C231: 'dun': redefinition
+DISPLAY.C(13): error C141: syntax error near '}'
+compiling delay.c...
+DELAY.C(4): error C141: syntax error near 'void'
+DELAY.C(5): error C231: '_delay': redefinition
+DELAY.C(5): error C141: syntax error near '{'
+DELAY.C(7): error C141: syntax error near 'for'
+DELAY.C(7): error C141: syntax error near '=', expected ')'
+DELAY.C(7): error C129: missing ';' before '>'
+Target not created
+Build target 'Target 1'
+compiling juzhen1.c...
+JUZHEN1.C(5): error C141: syntax error near 'unsigned'
+JUZHEN1.C(6): error C231: 'key_check': redefinition
+JUZHEN1.C(6): error C141: syntax error near '{'
+JUZHEN1.C(8): error C141: syntax error near 'while'
+JUZHEN1.C(8): error C141: syntax error near '1'
+JUZHEN1.C(10): error C231: 'P3': redefinition
+JUZHEN1.C(10): error C231: 'P3': redefinition
+JUZHEN1.C(11): error C141: syntax error near 'if'
+JUZHEN1.C(11): error C141: syntax error near '&', expected ')'
+JUZHEN1.C(13): error C141: syntax error near '5'
+compiling main.c...
+MAIN.C(4): error C141: syntax error near 'void'
+MAIN.C(5): error C141: syntax error near '{'
+MAIN.C(9): error C231: 'show': redefinition
+MAIN.C(11): error C141: syntax error near '}'
+compiling display.c...
+DISPLAY.C(4): error C141: syntax error near 'void'
+DISPLAY.C(5): error C231: 'show': redefinition
+DISPLAY.C(5): error C141: syntax error near '{'
+DISPLAY.C(6): error C231: 'wei': redefinition
+DISPLAY.C(6): error C231: 'wei': redefinition
+DISPLAY.C(7): error C231: 'P0': redefinition
+DISPLAY.C(7): error C231: 'P0': redefinition
+DISPLAY.C(8): error C279: 'wei': multiple initialization
+DISPLAY.C(8): error C231: 'wei': redefinition
+DISPLAY.C(8): error C231: 'wei': redefinition
+DISPLAY.C(10): error C231: 'dun': redefinition
+DISPLAY.C(10): error C231: 'dun': redefinition
+DISPLAY.C(11): error C279: 'P0': multiple initialization
+DISPLAY.C(11): error C231: 'P0': redefinition
+DISPLAY.C(11): error C231: 'P0': redefinition
+DISPLAY.C(12): error C279: 'dun': multiple initialization
+DISPLAY.C(12): error C231: 'dun': redefinition
+DISPLAY.C(12): error C231: 'dun': redefinition
+DISPLAY.C(13): error C141: syntax error near '}'
+compiling delay.c...
+DELAY.C(4): error C141: syntax error near 'void'
+DELAY.C(5): error C231: '_delay': redefinition
+DELAY.C(5): error C141: syntax error near '{'
+DELAY.C(7): error C141: syntax error near 'for'
+DELAY.C(7): error C141: syntax error near '=', expected ')'
+DELAY.C(7): error C129: missing ';' before '>'
+Target not created
+Build target 'Target 1'
+compiling juzhen1.c...
+JUZHEN1.C(5): error C141: syntax error near 'unsigned'
+JUZHEN1.C(6): error C231: 'key_check': redefinition
+JUZHEN1.C(6): error C141: syntax error near '{'
+JUZHEN1.C(8): error C141: syntax error near 'while'
+JUZHEN1.C(8): error C141: syntax error near '1'
+JUZHEN1.C(10): error C231: 'P3': redefinition
+JUZHEN1.C(10): error C231: 'P3': redefinition
+JUZHEN1.C(11): error C141: syntax error near 'if'
+JUZHEN1.C(11): error C141: syntax error near '&', expected ')'
+JUZHEN1.C(13): error C141: syntax error near '5'
+compiling main.c...
+MAIN.C(4): error C141: syntax error near 'void'
+MAIN.C(5): error C141: syntax error near '{'
+MAIN.C(11): error C231: 'show': redefinition
+MAIN.C(11): error C141: syntax error near '}'
+compiling display.c...
+DISPLAY.C(4): error C141: syntax error near 'void'
+DISPLAY.C(5): error C231: 'show': redefinition
+DISPLAY.C(5): error C141: syntax error near '{'
+DISPLAY.C(6): error C231: 'wei': redefinition
+DISPLAY.C(6): error C231: 'wei': redefinition
+DISPLAY.C(7): error C231: 'P0': redefinition
+DISPLAY.C(7): error C231: 'P0': redefinition
+DISPLAY.C(8): error C279: 'wei': multiple initialization
+DISPLAY.C(8): error C231: 'wei': redefinition
+DISPLAY.C(8): error C231: 'wei': redefinition
+DISPLAY.C(10): error C231: 'dun': redefinition
+DISPLAY.C(10): error C231: 'dun': redefinition
+DISPLAY.C(11): error C279: 'P0': multiple initialization
+DISPLAY.C(11): error C231: 'P0': redefinition
+DISPLAY.C(11): error C231: 'P0': redefinition
+DISPLAY.C(12): error C279: 'dun': multiple initialization
+DISPLAY.C(12): error C231: 'dun': redefinition
+DISPLAY.C(12): error C231: 'dun': redefinition
+DISPLAY.C(13): error C141: syntax error near '}'
+compiling delay.c...
+DELAY.C(4): error C141: syntax error near 'void'
+DELAY.C(5): error C231: '_delay': redefinition
+DELAY.C(5): error C141: syntax error near '{'
+DELAY.C(7): error C141: syntax error near 'for'
+DELAY.C(7): error C141: syntax error near '=', expected ')'
+DELAY.C(7): error C129: missing ';' before '>'
+Target not created
+Build target 'Target 1'
+compiling juzhen1.c...
+JUZHEN1.C(5): error C141: syntax error near 'unsigned'
+JUZHEN1.C(6): error C231: 'key_check': redefinition
+JUZHEN1.C(6): error C141: syntax error near '{'
+JUZHEN1.C(8): error C141: syntax error near 'while'
+JUZHEN1.C(8): error C141: syntax error near '1'
+JUZHEN1.C(10): error C231: 'P3': redefinition
+JUZHEN1.C(10): error C231: 'P3': redefinition
+JUZHEN1.C(11): error C141: syntax error near 'if'
+JUZHEN1.C(11): error C141: syntax error near '&', expected ')'
+JUZHEN1.C(13): error C141: syntax error near '5'
+compiling main.c...
+MAIN.C(4): error C141: syntax error near 'void'
+MAIN.C(5): error C141: syntax error near '{'
+MAIN.C(11): error C231: 'show': redefinition
+MAIN.C(11): error C141: syntax error near '}'
+compiling display.c...
+DISPLAY.C(4): error C141: syntax error near 'void'
+DISPLAY.C(5): error C231: 'show': redefinition
+DISPLAY.C(5): error C141: syntax error near '{'
+DISPLAY.C(6): error C231: 'wei': redefinition
+DISPLAY.C(6): error C231: 'wei': redefinition
+DISPLAY.C(7): error C231: 'P0': redefinition
+DISPLAY.C(7): error C231: 'P0': redefinition
+DISPLAY.C(8): error C279: 'wei': multiple initialization
+DISPLAY.C(8): error C231: 'wei': redefinition
+DISPLAY.C(8): error C231: 'wei': redefinition
+DISPLAY.C(10): error C231: 'dun': redefinition
+DISPLAY.C(10): error C231: 'dun': redefinition
+DISPLAY.C(11): error C279: 'P0': multiple initialization
+DISPLAY.C(11): error C231: 'P0': redefinition
+DISPLAY.C(11): error C231: 'P0': redefinition
+DISPLAY.C(12): error C279: 'dun': multiple initialization
+DISPLAY.C(12): error C231: 'dun': redefinition
+DISPLAY.C(12): error C231: 'dun': redefinition
+DISPLAY.C(13): error C141: syntax error near '}'
+compiling delay.c...
+DELAY.C(4): error C141: syntax error near 'void'
+DELAY.C(5): error C231: '_delay': redefinition
+DELAY.C(5): error C141: syntax error near '{'
+DELAY.C(7): error C141: syntax error near 'for'
+DELAY.C(7): error C141: syntax error near '=', expected ')'
+DELAY.C(7): error C129: missing ';' before '>'
+Target not created
+Build target 'Target 1'
+compiling juzhen1.c...
+JUZHEN1.C(5): error C141: syntax error near 'unsigned'
+JUZHEN1.C(6): error C231: 'key_check': redefinition
+JUZHEN1.C(6): error C141: syntax error near '{'
+JUZHEN1.C(8): error C141: syntax error near 'while'
+JUZHEN1.C(8): error C141: syntax error near '1'
+JUZHEN1.C(10): error C231: 'P3': redefinition
+JUZHEN1.C(10): error C231: 'P3': redefinition
+JUZHEN1.C(11): error C141: syntax error near 'if'
+JUZHEN1.C(11): error C141: syntax error near '&', expected ')'
+JUZHEN1.C(13): error C141: syntax error near '5'
+compiling main.c...
+MAIN.C(4): error C141: syntax error near 'void'
+MAIN.C(5): error C141: syntax error near '{'
+MAIN.C(11): error C231: 'show': redefinition
+MAIN.C(11): error C141: syntax error near '}'
+compiling display.c...
+DISPLAY.C(4): error C141: syntax error near 'void'
+DISPLAY.C(4): error C231: 'show': redefinition
+DISPLAY.C(6): error C231: 'show': redefinition
+DISPLAY.C(14): error C231: 'show': redefinition
+compiling delay.c...
+DELAY.C(4): error C141: syntax error near 'void'
+DELAY.C(5): error C231: '_delay': redefinition
+DELAY.C(5): error C141: syntax error near '{'
+DELAY.C(7): error C141: syntax error near 'for'
+DELAY.C(7): error C141: syntax error near '=', expected ')'
+DELAY.C(7): error C129: missing ';' before '>'
+Target not created
+Build target 'Target 1'
+compiling juzhen1.c...
+JUZHEN1.C(5): error C141: syntax error near 'unsigned'
+JUZHEN1.C(6): error C231: 'key_check': redefinition
+JUZHEN1.C(6): error C141: syntax error near '{'
+JUZHEN1.C(8): error C141: syntax error near 'while'
+JUZHEN1.C(8): error C141: syntax error near '1'
+JUZHEN1.C(10): error C231: 'P3': redefinition
+JUZHEN1.C(10): error C231: 'P3': redefinition
+JUZHEN1.C(11): error C141: syntax error near 'if'
+JUZHEN1.C(11): error C141: syntax error near '&', expected ')'
+JUZHEN1.C(13): error C141: syntax error near '5'
+compiling main.c...
+MAIN.C(4): error C141: syntax error near 'void'
+MAIN.C(4): error C231: 'show': redefinition
+compiling display.c...
+DISPLAY.C(4): error C141: syntax error near 'void'
+DISPLAY.C(4): error C231: 'show': redefinition
+DISPLAY.C(6): error C231: 'show': redefinition
+DISPLAY.C(14): error C231: 'show': redefinition
+compiling delay.c...
+DELAY.C(4): error C141: syntax error near 'void'
+DELAY.C(5): error C231: '_delay': redefinition
+DELAY.C(5): error C141: syntax error near '{'
+DELAY.C(7): error C141: syntax error near 'for'
+DELAY.C(7): error C141: syntax error near '=', expected ')'
+DELAY.C(7): error C129: missing ';' before '>'
+Target not created
+Build target 'Target 1'
+compiling juzhen1.c...
+JUZHEN1.C(5): error C141: syntax error near 'unsigned'
+JUZHEN1.C(6): error C231: 'key_check': redefinition
+JUZHEN1.C(6): error C141: syntax error near '{'
+JUZHEN1.C(8): error C141: syntax error near 'while'
+JUZHEN1.C(8): error C141: syntax error near '1'
+JUZHEN1.C(10): error C231: 'P3': redefinition
+JUZHEN1.C(10): error C231: 'P3': redefinition
+JUZHEN1.C(11): error C141: syntax error near 'if'
+JUZHEN1.C(11): error C141: syntax error near '&', expected ')'
+JUZHEN1.C(13): error C141: syntax error near '5'
+compiling main.c...
+MAIN.C(4): error C141: syntax error near 'void'
+MAIN.C(4): error C231: 'show': redefinition
+compiling display.c...
+DISPLAY.C(5): error C141: syntax error near 'void'
+DISPLAY.C(6): error C231: 'show': redefinition
+DISPLAY.C(6): error C141: syntax error near '{'
+DISPLAY.C(7): error C231: 'wei': redefinition
+DISPLAY.C(7): error C231: 'wei': redefinition
+DISPLAY.C(8): error C231: 'P0': redefinition
+DISPLAY.C(8): error C231: 'P0': redefinition
+DISPLAY.C(9): error C279: 'wei': multiple initialization
+DISPLAY.C(9): error C231: 'wei': redefinition
+DISPLAY.C(9): error C231: 'wei': redefinition
+DISPLAY.C(11): error C231: 'dun': redefinition
+DISPLAY.C(11): error C231: 'dun': redefinition
+DISPLAY.C(12): error C279: 'P0': multiple initialization
+DISPLAY.C(12): error C231: 'P0': redefinition
+DISPLAY.C(12): error C231: 'P0': redefinition
+DISPLAY.C(13): error C279: 'dun': multiple initialization
+DISPLAY.C(13): error C231: 'dun': redefinition
+DISPLAY.C(13): error C231: 'dun': redefinition
+DISPLAY.C(14): error C141: syntax error near '}'
+compiling delay.c...
+DELAY.C(4): error C141: syntax error near 'void'
+DELAY.C(5): error C231: '_delay': redefinition
+DELAY.C(5): error C141: syntax error near '{'
+DELAY.C(7): error C141: syntax error near 'for'
+DELAY.C(7): error C141: syntax error near '=', expected ')'
+DELAY.C(7): error C129: missing ';' before '>'
+Target not created
+Build target 'Target 1'
+compiling juzhen1.c...
+JUZHEN1.C(5): error C141: syntax error near 'unsigned'
+JUZHEN1.C(6): error C231: 'key_check': redefinition
+JUZHEN1.C(6): error C141: syntax error near '{'
+JUZHEN1.C(8): error C141: syntax error near 'while'
+JUZHEN1.C(8): error C141: syntax error near '1'
+JUZHEN1.C(10): error C231: 'P3': redefinition
+JUZHEN1.C(10): error C231: 'P3': redefinition
+JUZHEN1.C(11): error C141: syntax error near 'if'
+JUZHEN1.C(11): error C141: syntax error near '&', expected ')'
+JUZHEN1.C(13): error C141: syntax error near '5'
+compiling main.c...
+MAIN.C(5): error C141: syntax error near 'void'
+MAIN.C(6): error C141: syntax error near '{'
+MAIN.C(10): error C231: 'show': redefinition
+MAIN.C(12): error C141: syntax error near '}'
+compiling display.c...
+DISPLAY.C(5): error C141: syntax error near 'void'
+DISPLAY.C(6): error C231: 'show': redefinition
+DISPLAY.C(6): error C141: syntax error near '{'
+DISPLAY.C(7): error C231: 'wei': redefinition
+DISPLAY.C(7): error C231: 'wei': redefinition
+DISPLAY.C(8): error C231: 'P0': redefinition
+DISPLAY.C(8): error C231: 'P0': redefinition
+DISPLAY.C(9): error C279: 'wei': multiple initialization
+DISPLAY.C(9): error C231: 'wei': redefinition
+DISPLAY.C(9): error C231: 'wei': redefinition
+DISPLAY.C(11): error C231: 'dun': redefinition
+DISPLAY.C(11): error C231: 'dun': redefinition
+DISPLAY.C(12): error C279: 'P0': multiple initialization
+DISPLAY.C(12): error C231: 'P0': redefinition
+DISPLAY.C(12): error C231: 'P0': redefinition
+DISPLAY.C(13): error C279: 'dun': multiple initialization
+DISPLAY.C(13): error C231: 'dun': redefinition
+DISPLAY.C(13): error C231: 'dun': redefinition
+DISPLAY.C(14): error C141: syntax error near '}'
+compiling delay.c...
+DELAY.C(4): error C141: syntax error near 'void'
+DELAY.C(5): error C231: '_delay': redefinition
+DELAY.C(5): error C141: syntax error near '{'
+DELAY.C(7): error C141: syntax error near 'for'
+DELAY.C(7): error C141: syntax error near '=', expected ')'
+DELAY.C(7): error C129: missing ';' before '>'
+Target not created
+Build target 'Target 1'
+compiling juzhen1.c...
+JUZHEN1.C(5): error C141: syntax error near 'unsigned'
+JUZHEN1.C(6): error C231: 'key_check': redefinition
+JUZHEN1.C(6): error C141: syntax error near '{'
+JUZHEN1.C(8): error C141: syntax error near 'while'
+JUZHEN1.C(8): error C141: syntax error near '1'
+JUZHEN1.C(10): error C231: 'P3': redefinition
+JUZHEN1.C(10): error C231: 'P3': redefinition
+JUZHEN1.C(11): error C141: syntax error near 'if'
+JUZHEN1.C(11): error C141: syntax error near '&', expected ')'
+JUZHEN1.C(13): error C141: syntax error near '5'
+compiling main.c...
+MAIN.C(5): error C141: syntax error near 'void'
+MAIN.C(6): error C141: syntax error near '{'
+MAIN.C(10): error C231: 'show': redefinition
+MAIN.C(12): error C141: syntax error near '}'
+compiling display.c...
+DISPLAY.C(5): error C141: syntax error near 'void'
+DISPLAY.C(6): error C231: 'show': redefinition
+DISPLAY.C(6): error C141: syntax error near '{'
+DISPLAY.C(7): error C231: 'wei': redefinition
+DISPLAY.C(7): error C231: 'wei': redefinition
+DISPLAY.C(8): error C231: 'P0': redefinition
+DISPLAY.C(8): error C231: 'P0': redefinition
+DISPLAY.C(9): error C279: 'wei': multiple initialization
+DISPLAY.C(9): error C231: 'wei': redefinition
+DISPLAY.C(9): error C231: 'wei': redefinition
+DISPLAY.C(11): error C231: 'dun': redefinition
+DISPLAY.C(11): error C231: 'dun': redefinition
+DISPLAY.C(12): error C279: 'P0': multiple initialization
+DISPLAY.C(12): error C231: 'P0': redefinition
+DISPLAY.C(12): error C231: 'P0': redefinition
+DISPLAY.C(13): error C279: 'dun': multiple initialization
+DISPLAY.C(13): error C231: 'dun': redefinition
+DISPLAY.C(13): error C231: 'dun': redefinition
+DISPLAY.C(14): error C141: syntax error near '}'
+compiling delay.c...
+DELAY.C(4): error C141: syntax error near 'void'
+DELAY.C(5): error C231: '_delay': redefinition
+DELAY.C(5): error C141: syntax error near '{'
+DELAY.C(7): error C141: syntax error near 'for'
+DELAY.C(7): error C141: syntax error near '=', expected ')'
+DELAY.C(7): error C129: missing ';' before '>'
+Target not created
+Build target 'Target 1'
+compiling juzhen1.c...
+JUZHEN1.C(6): error C231: 'key_check': redefinition
+JUZHEN1.C(39): error C231: 'key_check': redefinition
+compiling main.c...
+compiling display.c...
+DISPLAY.C(6): error C231: 'show': redefinition
+DISPLAY.C(14): error C231: 'show': redefinition
+compiling delay.c...
+DELAY.C(5): error C231: '_delay': redefinition
+DELAY.C(9): error C231: '_delay': redefinition
+DELAY.C(9): error C141: syntax error near ';'
+Target not created
+Build target 'Target 1'
+compiling juzhen1.c...
+compiling main.c...
+compiling display.c...
+DISPLAY.C(6): error C231: 'show': redefinition
+DISPLAY.C(14): error C231: 'show': redefinition
+compiling delay.c...
+DELAY.C(5): error C231: '_delay': redefinition
+DELAY.C(9): error C231: '_delay': redefinition
+DELAY.C(9): error C141: syntax error near ';'
+Target not created
+Build target 'Target 1'
+compiling juzhen1.c...
+compiling main.c...
+compiling display.c...
+compiling delay.c...
+DELAY.C(5): error C231: '_delay': redefinition
+DELAY.C(9): error C231: '_delay': redefinition
+DELAY.C(9): error C141: syntax error near ';'
+Target not created
+Build target 'Target 1'
+compiling juzhen1.c...
+compiling main.c...
+compiling display.c...
+compiling delay.c...
+DELAY.C(9): error C141: syntax error near ';'
+Target not created
+Build target 'Target 1'
+compiling juzhen1.c...
+compiling main.c...
+compiling display.c...
+compiling delay.c...
+linking...
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  X
+    MODULE:  main.obj (MAIN)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  LEDDATA
+    MODULE:  main.obj (MAIN)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  X
+    MODULE:  display.obj (DISPLAY)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  LEDDATA
+    MODULE:  display.obj (DISPLAY)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  X
+    MODULE:  delay.obj (DELAY)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  LEDDATA
+    MODULE:  delay.obj (DELAY)
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?KEY_CHECK?JUZHEN1
+Program Size: data=114.0 xdata=0 code=357
+Target not created
+Build target 'Target 1'
+compiling juzhen1.c...
+init.h(5): warning C317: attempt to redefine macro 'uchar'
+JUZHEN1.C(23): error C202: 'x': undefined identifier
+JUZHEN1.C(24): error C202: 'x': undefined identifier
+JUZHEN1.C(26): error C202: 'x': undefined identifier
+JUZHEN1.C(27): error C202: 'x': undefined identifier
+JUZHEN1.C(28): error C202: 'x': undefined identifier
+JUZHEN1.C(29): error C202: 'x': undefined identifier
+JUZHEN1.C(30): error C202: 'x': undefined identifier
+JUZHEN1.C(31): error C202: 'x': undefined identifier
+JUZHEN1.C(32): error C202: 'x': undefined identifier
+JUZHEN1.C(33): error C202: 'x': undefined identifier
+JUZHEN1.C(34): error C202: 'x': undefined identifier
+JUZHEN1.C(35): error C202: 'x': undefined identifier
+compiling main.c...
+init.h(5): warning C317: attempt to redefine macro 'uchar'
+compiling display.c...
+init.h(5): warning C317: attempt to redefine macro 'uchar'
+DISPLAY.C(12): error C202: 'x': undefined identifier
+compiling delay.c...
+init.h(5): warning C317: attempt to redefine macro 'uchar'
+Target not created
+Build target 'Target 1'
+compiling juzhen1.c...
+JUZHEN1.C(23): error C202: 'x': undefined identifier
+JUZHEN1.C(24): error C202: 'x': undefined identifier
+JUZHEN1.C(26): error C202: 'x': undefined identifier
+JUZHEN1.C(27): error C202: 'x': undefined identifier
+JUZHEN1.C(28): error C202: 'x': undefined identifier
+JUZHEN1.C(29): error C202: 'x': undefined identifier
+JUZHEN1.C(30): error C202: 'x': undefined identifier
+JUZHEN1.C(31): error C202: 'x': undefined identifier
+JUZHEN1.C(32): error C202: 'x': undefined identifier
+JUZHEN1.C(33): error C202: 'x': undefined identifier
+JUZHEN1.C(34): error C202: 'x': undefined identifier
+JUZHEN1.C(35): error C202: 'x': undefined identifier
+compiling main.c...
+compiling display.c...
+DISPLAY.C(12): error C202: 'x': undefined identifier
+compiling delay.c...
+Target not created
+Build target 'Target 1'
+compiling juzhen1.c...
+JUZHEN1.C(23): error C202: 'x': undefined identifier
+JUZHEN1.C(24): error C202: 'x': undefined identifier
+JUZHEN1.C(26): error C202: 'x': undefined identifier
+JUZHEN1.C(27): error C202: 'x': undefined identifier
+JUZHEN1.C(28): error C202: 'x': undefined identifier
+JUZHEN1.C(29): error C202: 'x': undefined identifier
+JUZHEN1.C(30): error C202: 'x': undefined identifier
+JUZHEN1.C(31): error C202: 'x': undefined identifier
+JUZHEN1.C(32): error C202: 'x': undefined identifier
+JUZHEN1.C(33): error C202: 'x': undefined identifier
+JUZHEN1.C(34): error C202: 'x': undefined identifier
+JUZHEN1.C(35): error C202: 'x': undefined identifier
+compiling main.c...
+compiling display.c...
+DISPLAY.C(12): error C202: 'x': undefined identifier
+compiling delay.c...
+Target not created
+Build target 'Target 1'
+compiling juzhen1.c...
+INIT.H(6): error C129: missing ';' before 'extern'
+compiling main.c...
+INIT.H(6): error C129: missing ';' before 'extern'
+compiling display.c...
+INIT.H(6): error C129: missing ';' before 'extern'
+compiling delay.c...
+INIT.H(6): error C129: missing ';' before 'extern'
+Target not created
+Build target 'Target 1'
+compiling juzhen1.c...
+INIT.H(10): error C129: missing ';' before 'sbit'
+compiling main.c...
+INIT.H(10): error C129: missing ';' before 'sbit'
+compiling display.c...
+INIT.H(10): error C129: missing ';' before 'sbit'
+compiling delay.c...
+INIT.H(10): error C129: missing ';' before 'sbit'
+Target not created

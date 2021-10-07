@@ -1,0 +1,3 @@
+".\Objects\copy.obj" 
+TO ".\Objects\copy" 
+PRINT(".\Listings\copy.m51") RAMSIZE(256) 

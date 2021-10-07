@@ -1,0 +1,78 @@
+C51 COMPILER V9.00   SHUAM                                                                 03/23/2018 17:02:01 PAGE 1   
+
+
+C51 COMPILER V9.00, COMPILATION OF MODULE SHUAM
+OBJECT MODULE PLACED IN shuam.OBJ
+COMPILER INVOKED BY: C:\Keil\C51\BIN\C51.EXE shuam.c BROWSE DEBUG OBJECTEXTEND
+
+line level    source
+
+   1          #include<reg52.h>
+   2          #include<intrins.h>
+   3          #include<init.h>
+   4          #define  uchar  unsigned char
+   5          #define  uint unsigned int 
+   6          
+   7          unsigned char leddata[]={ 
+   8           
+   9                          0x3F,  //"0"
+  10                          0x06,  //"1"
+  11                          0x5B,  //"2"
+  12                          0x4F,  //"3"
+  13                          0x66,  //"4"
+  14                          0x6D,  //"5"
+  15                          0x7D,  //"6"
+  16                          0x07,  //"7"
+  17                          0x7F,  //"8"
+  18                          0x6F,  //"9"
+  19                          0x77,  //"A"
+  20                          0x7C,  //"B"
+  21                          0x39,  //"C"
+  22                          0x5E,  //"D"
+  23                          0x79,  //"E"
+  24                          0x71,  //"F"
+  25                          0x76,  //"H"
+  26                          0x38,  //"L"
+  27                          0x37,  //"n"
+  28                          0x3E,  //"u"
+  29                          0x73,  //"P"
+  30                          0x5C,  //"o"
+  31                          0x40,  //"-"
+  32                          0x00,  //Ï¨Ãð
+  33                          0x00  //×Ô¶¨Òå
+  34           
+  35                                   }
+  36          
+  37          
+  38          void show()
+*** ERROR C141 IN LINE 38 OF SHUAM.C: syntax error near 'void'
+  39                  {
+*** ERROR C231 IN LINE 39 OF SHUAM.C: 'show': redefinition
+*** ERROR C141 IN LINE 39 OF SHUAM.C: syntax error near '{'
+  40                   wei=1;
+*** ERROR C231 IN LINE 40 OF SHUAM.C: 'wei': redefinition
+*** ERROR C231 IN LINE 40 OF SHUAM.C: 'wei': redefinition
+  41                   P0=0xfe;
+*** ERROR C231 IN LINE 41 OF SHUAM.C: 'P0': redefinition
+*** ERROR C231 IN LINE 41 OF SHUAM.C: 'P0': redefinition
+  42                   wei=0;
+*** ERROR C279 IN LINE 42 OF SHUAM.C: 'wei': multiple initialization
+*** ERROR C231 IN LINE 42 OF SHUAM.C: 'wei': redefinition
+*** ERROR C231 IN LINE 42 OF SHUAM.C: 'wei': redefinition
+  43                   dun=1;
+*** ERROR C231 IN LINE 43 OF SHUAM.C: 'dun': redefinition
+*** ERROR C231 IN LINE 43 OF SHUAM.C: 'dun': redefinition
+C51 COMPILER V9.00   SHUAM                                                                 03/23/2018 17:02:01 PAGE 2   
+
+  44                   P0=leddata[key_change()]  ;
+*** ERROR C279 IN LINE 44 OF SHUAM.C: 'P0': multiple initialization
+*** ERROR C231 IN LINE 44 OF SHUAM.C: 'P0': redefinition
+*** ERROR C231 IN LINE 44 OF SHUAM.C: 'P0': redefinition
+  45                   dun=1;
+*** ERROR C279 IN LINE 45 OF SHUAM.C: 'dun': multiple initialization
+*** ERROR C231 IN LINE 45 OF SHUAM.C: 'dun': redefinition
+*** ERROR C231 IN LINE 45 OF SHUAM.C: 'dun': redefinition
+  46                  }
+*** ERROR C141 IN LINE 46 OF SHUAM.C: syntax error near '}'
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  19 ERROR(S)

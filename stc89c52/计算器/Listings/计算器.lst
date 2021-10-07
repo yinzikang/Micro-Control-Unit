@@ -1,0 +1,242 @@
+C51 COMPILER V9.54   ______                                                                03/22/2018 18:31:50 PAGE 1   
+
+
+C51 COMPILER V9.54, COMPILATION OF MODULE ______
+OBJECT MODULE PLACED IN .\Objects\¼ÆËãÆ÷.obj
+COMPILER INVOKED BY: D:\ruanjizn\keli\C51\BIN\C51.EXE ¼ÆËãÆ÷.c OPTIMIZE(8,SPEED) BROWSE DEBUG OBJECTEXTEND PRINT(.\Listi
+                    -ngs\¼ÆËãÆ÷.lst) TABS(2) OBJECT(.\Objects\¼ÆËãÆ÷.obj)
+
+line level    source
+
+   1          #include <reg52.h>
+   2          #define uint unsigned int
+   3          #define uchar unsigned char
+   4          sbit du = P2^6;
+   5          sbit we = P2^7;
+   6          uchar key,a1,a2,a3,a4,wei,count = 0;
+   7          uchar code table[] = {
+   8                          0x3F,  //"0"
+   9                          0x06,  //"1"
+  10                          0x5B,  //"2"
+  11                          0x4F,  //"3"
+  12                          0x66,  //"4"
+  13                          0x6D,  //"5"
+  14                          0x7D,  //"6"
+  15                          0x07,  //"7"
+  16                          0x7F,  //"8"
+  17                          0x6F,  //"9"
+  18                          0x00,  //"??"
+  19          };
+  20          
+  21          void delay(uint x)
+  22          {
+  23   1        uint i,j;
+  24   1        for(i=x;i>0;i--)
+  25   1        for(j=110;j>0;j--);
+  26   1      }
+  27          
+  28          void display(uchar num1,uchar num2,uchar num3,uchar num4)
+  29          {
+  30   1          we = 1;
+  31   1          P0 = 0xfe;
+  32   1          we = 0;
+  33   1          du = 1;
+  34   1          P0 = table[num1];
+  35   1          du = 0;
+  36   1          delay(2);
+  37   1      
+  38   1          we = 1;
+  39   1          P0 = 0xfd;
+  40   1          we = 0;
+  41   1          du = 1;
+  42   1          P0 = table[num2];
+  43   1          du = 0;
+  44   1          delay(2);
+  45   1          
+  46   1          we = 1;
+  47   1          P0 = 0xfb;
+  48   1          we = 0;
+  49   1          du = 1;
+  50   1          P0 = table[num3];
+  51   1          du = 0;
+  52   1          delay(2);
+  53   1          
+  54   1          we = 1;
+C51 COMPILER V9.54   ______                                                                03/22/2018 18:31:50 PAGE 2   
+
+  55   1          P0 = 0xf7;
+  56   1          we = 0;
+  57   1          du = 1;
+  58   1          P0 = table[num4];
+  59   1          du = 0;
+  60   1          delay(2);
+  61   1          
+  62   1      }
+  63          
+  64          void init()
+  65          {
+  66   1        switch(wei)
+  67   1        {
+  68   2          case 1:
+  69   2            a1 = key;
+  70   2            break;
+  71   2          case 2:
+  72   2            a2 = key;
+  73   2            break;
+  74   2          case 3:
+  75   2            a3 = key;
+  76   2            break;
+  77   2          case 4:
+  78   2            a4 = key;
+  79   2            break;
+  80   2        }
+  81   1      }
+  82          void keyscan()
+  83          {
+  84   1        uchar temp;
+  85   1        P3 = 0xfe;
+  86   1        temp = P3;
+  87   1        temp = temp&0xf0;
+  88   1        if(temp != 0xf0)
+  89   1        {
+  90   2          delay(10);
+  91   2          temp = P3;
+  92   2          temp = temp&0xf0;
+  93   2          if(temp != 0xf0)
+  94   2          {
+  95   3            count++;
+  96   3            temp = P3;
+  97   3            switch(temp)
+  98   3            {
+  99   4              case 0xee:
+ 100   4                key = 0;
+ 101   4                wei++;
+ 102   4                break;
+ 103   4              case 0xde:
+ 104   4                key = 1;
+ 105   4                wei++;
+ 106   4                break;
+ 107   4              case 0xbe:
+ 108   4                key = 2;
+ 109   4                wei++;
+ 110   4                break;
+ 111   4              case 0x7e:
+ 112   4                key = 3;
+ 113   4                wei++;
+ 114   4                break;
+ 115   4            }
+ 116   3            while(temp != 0xf0)
+C51 COMPILER V9.54   ______                                                                03/22/2018 18:31:50 PAGE 3   
+
+ 117   3            {
+ 118   4              temp = P3;
+ 119   4              temp = temp&0xf0;
+ 120   4            }
+ 121   3            init();
+ 122   3          }
+ 123   2        }
+ 124   1        P3 = 0xfd;
+ 125   1        temp = P3;
+ 126   1        temp = temp&0xf0;
+ 127   1        if(temp != 0xf0)
+ 128   1        {
+ 129   2          delay(10);
+ 130   2          temp = P3;
+ 131   2          temp = temp&0xf0;
+ 132   2          if(temp != 0xf0)
+ 133   2          {
+ 134   3            count++;
+ 135   3            temp = P3;
+ 136   3            switch(temp)
+ 137   3            {
+ 138   4              case 0xed:
+ 139   4                key = 4;
+ 140   4                wei++;
+ 141   4                break;
+ 142   4              case 0xdd:
+ 143   4                key = 5;
+ 144   4                wei++;
+ 145   4                break;
+ 146   4              case 0xbd:
+ 147   4                key = 6;
+ 148   4                wei++;
+ 149   4                break;
+ 150   4              case 0x7d:
+ 151   4                key = 7;
+ 152   4                wei++;
+ 153   4                break;
+ 154   4            }
+ 155   3            while(temp != 0xf0)
+ 156   3            {
+ 157   4              temp = P3;
+ 158   4              temp = temp&0xf0;
+ 159   4            }
+ 160   3            init();
+ 161   3          }
+ 162   2        }
+ 163   1        P3 = 0xfb;
+ 164   1        temp = P3;
+ 165   1        temp = temp&0xf0;
+ 166   1        if(temp != 0xf0)
+ 167   1        {
+ 168   2          delay(10);
+ 169   2          temp = P3;
+ 170   2          temp = temp&0xf0;
+ 171   2          if(temp != 0xf0)
+ 172   2          {
+ 173   3            count++;
+ 174   3            temp = P3;
+ 175   3            switch(temp)
+ 176   3            {
+ 177   4              case 0xeb:
+ 178   4                key = 8;
+C51 COMPILER V9.54   ______                                                                03/22/2018 18:31:50 PAGE 4   
+
+ 179   4                wei++;
+ 180   4                break;
+ 181   4              case 0xdb:
+ 182   4                key = 9;
+ 183   4                wei++;
+ 184   4                break;
+ 185   4              case 0xbb:
+ 186   4                key = 10;
+ 187   4                break;
+ 188   4            }
+ 189   3            while(temp != 0xf0)
+ 190   3            {
+ 191   4              temp = P3;
+ 192   4              temp = temp&0xf0;
+ 193   4            }
+ 194   3            init();
+ 195   3          }
+ 196   2        }
+ 197   1        display(a1,a2,a3,a4);
+ 198   1      }
+ 199          
+ 200          void main()
+ 201          {
+ 202   1        du = 1;
+ 203   1        P0 = 0;
+ 204   1        du = 0;
+ 205   1        we = 1;
+ 206   1        P0 = 0;
+ 207   1        we = 0;
+ 208   1        while(1)
+ 209   1        {
+ 210   2          keyscan();
+ 211   2        }
+ 212   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    455    ----
+   CONSTANT SIZE    =     11    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =      7       5
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

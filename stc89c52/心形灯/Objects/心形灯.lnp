@@ -1,0 +1,3 @@
+".\Objects\心形灯.obj" 
+TO ".\Objects\心形灯" 
+PRINT(".\Listings\心形灯.m51") RAMSIZE(256) 

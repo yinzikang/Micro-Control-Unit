@@ -1,0 +1,75 @@
+C51 COMPILER V9.54   JUZHEN1                                                               03/23/2018 18:00:39 PAGE 1   
+
+
+C51 COMPILER V9.54, COMPILATION OF MODULE JUZHEN1
+OBJECT MODULE PLACED IN juzhen1.OBJ
+COMPILER INVOKED BY: D:\ruanjizn\keli\C51\BIN\C51.EXE juzhen1.c OPTIMIZE(8,SPEED) BROWSE DEBUG OBJECTEXTEND TABS(2)
+
+line level    source
+
+   1          #include<reg52.h>
+   2          #include<intrins.h>
+   3          #include<init.h>
+   4          uchar x;
+   5          uchar key_check()
+   6          {
+   7   1       uchar key_l,key_h;
+   8   1       while(1)
+   9   1       {
+  10   2          P3 = 0xf0;
+  11   2          if((P3 & 0xf0) != 0xf0)
+  12   2          {
+  13   3            delay(5);
+  14   3            if((P3 & 0xf0) != 0xf0)
+  15   3            {
+  16   4              key_l = P3 & 0xf0;
+  17   4              P3 = key_l | 0x0f;
+  18   4              key_h = P3 & 0x0f;
+  19   4              while((P3 & 0x0f) != 0x0f);
+  20   4            }
+  21   3          }
+  22   2        } 
+  23   1        x = key_l + key_h;
+  24   1        switch(x)
+  25   1        {
+  26   2          case 0xee : x = 1;
+  27   2                      break;
+  28   2          case 0xde : x = 2;
+  29   2                      break;
+  30   2          case 0xbe : x = 3;
+  31   2                      break;
+  32   2          case 0xed : x = 4;
+  33   2                      break;
+  34   2          case 0xdd : x = 5;
+  35   2                      break;
+  36   2          case 0xbd : x = 6;
+  37   2                      break;
+  38   2          case 0xeb : x = 7;
+  39   2                      break;
+  40   2          case 0xdb : x = 8;
+  41   2                      break;
+  42   2          case 0xbb : x = 9;
+  43   2                      break;
+  44   2          case 0xd7 : x = 0;
+  45   2                      break;
+  46   2        }
+  47   1        return 1;
+  48   1      } 
+  49          
+*** WARNING C294 IN LINE 23 OF juzhen1.c: unreachable code
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =     50    ----
+   CONSTANT SIZE    =   ----    ----
+C51 COMPILER V9.54   JUZHEN1                                                               03/23/2018 18:00:39 PAGE 2   
+
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =     26       1
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  1 WARNING(S),  0 ERROR(S)
